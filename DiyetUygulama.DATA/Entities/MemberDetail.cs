@@ -12,7 +12,7 @@ namespace DiyetUygulama.DATA.Entities
     public class MemberDetail : BaseEntity
     {
 
-        private DateTime _birthDate = DateTime.Now;
+        private DateTime _birthDate;
 
 
         public int MemberDetailId { get; set; }

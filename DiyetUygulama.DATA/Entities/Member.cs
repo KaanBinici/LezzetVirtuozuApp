@@ -13,6 +13,7 @@ namespace DiyetUygulama.DATA.Entities
         {
             Meals = new HashSet<Meal>();
         }
+
         public int MemberId { get; set; }
         public string MemberName { get; set; }
         public string MemberSurname { get; set; }
@@ -21,10 +22,8 @@ namespace DiyetUygulama.DATA.Entities
 
 
         //Navigation Properies
-        public MemberDetail MemberDetail { get; set; }
-        public LoginInfo LoginInfo { get; set; }
-        public ICollection<Meal> Meals { get; set; }
-
-
+        public virtual MemberDetail MemberDetail { get; set; }
+        public virtual LoginInfo LoginInfo { get; set; }
+        public virtual ICollection<Meal> Meals { get; set; }
     }
 }

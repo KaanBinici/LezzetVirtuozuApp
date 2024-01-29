@@ -17,10 +17,10 @@ namespace DiyetUygulama.DATA.Entities
 
         //Navigation Proporties
         public int CategoryId { get; set; }
-        public Category Category { get; set; }
-        public ProductDetail ProductDetail { get; set; }
+        public virtual Category Category { get; set; }
+        public virtual ProductDetail ProductDetail { get; set; }
         public int MealId { get; set; }
-        public Meal Meal { get; set; }
+        public virtual Meal Meal { get; set; }
        
 
     }

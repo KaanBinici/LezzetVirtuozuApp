@@ -14,9 +14,9 @@ namespace DiyetUygulama.DAL.Mapping
         public void Configure(EntityTypeBuilder<ProductDetail> builder)
         {
             builder.HasKey(x => x.ProductDetailId);
-            builder.Property(x=>x.Protein).HasColumnType("double").IsRequired();
-            builder.Property(x=>x.Carbonhydrate).HasColumnType("double").IsRequired();
-            builder.Property(x=>x.Sugar).HasColumnType("double").IsRequired();
+            builder.Property(x=>x.Protein).IsRequired();
+            builder.Property(x=>x.Carbonhydrate).IsRequired();
+            builder.Property(x=>x.Sugar).IsRequired();
         }
     }
 }

@@ -16,8 +16,8 @@ namespace DiyetUygulama.DATA.Entities
 
         //Navigation Properties
         public int MemberId { get; set; }
-        public Member Member { get; set; }
+        public virtual Member Member { get; set; }
         public int AdminId { get; set; }
-        public Admin Admin { get; set; }
+        public virtual Admin Admin { get; set; }
     }
 }

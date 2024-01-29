@@ -21,8 +21,8 @@ namespace DiyetUygulama.DATA.Entities
         public int? WaterConsumption { get; set; }
 
 
-        public ICollection<Product> Products { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
         public int MemberId { get; set; }
-        public Member Member { get; set; }
+        public virtual Member Member { get; set; }
     }
 }

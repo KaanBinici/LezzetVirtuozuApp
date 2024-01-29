@@ -14,6 +14,6 @@ namespace DiyetUygulama.DATA.Entities
         public string AdminSurname { get; set; }
 
         //Navigation Properties
-        public LoginInfo LoginInfo { get; set; }
+        public virtual LoginInfo LoginInfo { get; set; }
     }
 }

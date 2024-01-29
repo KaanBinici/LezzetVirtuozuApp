@@ -22,7 +22,6 @@ namespace DiyetUygulama.DATA.Entities
             set { _birthDate = value; }
         }
 
-        [NotMapped]
         public int Age
         {
             get { return DateTime.Now.Year - _birthDate.Year; }
@@ -36,9 +35,10 @@ namespace DiyetUygulama.DATA.Entities
         public Allergies? Allergy1 { get; set; }    //Nullable olacak
         public Allergies? Allergy2 { get; set; }    //Nullable olacak
 
+
         //Navigation Properties
         public int MemberId { get; set; }
-        public Member Member { get; set; }
+        public virtual Member Member { get; set; }
 
     }
 }

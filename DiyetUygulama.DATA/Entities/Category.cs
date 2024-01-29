@@ -18,6 +18,6 @@ namespace DiyetUygulama.DATA.Entities
         public string CategoryName { get; set; }
 
         //Navigation Properties
-        public ICollection<Product> Products { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
     }
 }

@@ -20,6 +20,7 @@ namespace DiyetUygulama.DAL.Mapping
             builder.Property(x => x.Weight).HasColumnType("double").IsRequired();
             builder.Property(x => x.FatRatio).HasColumnType("double");
             builder.Property(x => x.IsDiabetes).HasColumnType("bit").IsRequired();
+            builder.Ignore(x => x.Age);
         }
     }
 }

@@ -9,6 +9,10 @@ namespace DiyetUygulama.DATA.Entities
 {
     public class Member : BaseEntity
     {
+        public Member()
+        {
+            Meals = new HashSet<Meal>();
+        }
         public int MemberId { get; set; }
         public string MemberName { get; set; }
         public string MemberSurname { get; set; }

@@ -10,6 +10,11 @@ namespace DiyetUygulama.DATA.Entities
 {
     public class Meal : BaseEntity
     {
+        public Meal()
+        {
+            Products = new HashSet<Product>();
+        }
+
         public int  MealId { get; set; }
         public Meals MealType { get; set; }
         public DateTime MealDate { get; set; } = DateTime.Now;

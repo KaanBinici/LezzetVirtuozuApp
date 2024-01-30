@@ -22,12 +22,14 @@ namespace DiyetUygulama.SERVICE.Concrete
         public int Add(LoginInfo entity)
         {
             entity.CreatedDate = DateTime.Now;
+            entity.Status = BaseStatus.Added;
             return _loginInfoREPO.Create(entity);
         }
 
         public int Delete(LoginInfo entity)
         {
             entity.DeletedDate = DateTime.Now;
+            entity.Status = BaseStatus.Deleted;
             return _loginInfoREPO.Update(entity);
         }
 
@@ -49,7 +51,7 @@ namespace DiyetUygulama.SERVICE.Concrete
         public int Update(LoginInfo entity)
         {
             entity.UpdatedDate = DateTime.Now;
-            
+            entity.Status = BaseStatus.Modified;
             return _loginInfoREPO.Update(entity);
         }
     }

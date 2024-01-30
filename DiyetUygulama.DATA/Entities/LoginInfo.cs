@@ -12,7 +12,6 @@ namespace DiyetUygulama.DATA.Entities
         public int LoginInfoId { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public bool Status { get; set; }
 
         //Navigation Properties
         public int MemberId { get; set; }

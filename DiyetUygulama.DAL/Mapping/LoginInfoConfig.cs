@@ -17,7 +17,6 @@ namespace DiyetUygulama.DAL.Mapping
             builder.HasOne(x => x.Member).WithOne(x => x.LoginInfo).HasForeignKey<LoginInfo>(x => x.MemberId);
             builder.Property(x=>x.Email).IsRequired().HasColumnType("nvarchar").HasMaxLength(100);
             builder.Property(x=>x.Password).IsRequired().HasColumnType("nvarchar").HasMaxLength(50);
-            builder.Property(x => x.Status).HasDefaultValue(false);
         }
     }
 }

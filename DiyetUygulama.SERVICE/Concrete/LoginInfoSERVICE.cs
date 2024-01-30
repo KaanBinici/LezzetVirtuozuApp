@@ -40,7 +40,7 @@ namespace DiyetUygulama.SERVICE.Concrete
 
         public List<LoginInfo> GetAllActive()
         {
-            return _loginInfoREPO.GetAll();
+            return _loginInfoREPO.GetAllWhere(x=>x.Status != BaseStatus.Deleted);
         }
 
         public List<LoginInfo> GetWhere(Func<LoginInfo, bool> expression)

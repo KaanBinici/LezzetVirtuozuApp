@@ -15,6 +15,5 @@ namespace DiyetUygulama.SERVICE.Interfaces
         List<Admin> GetAll();
         List<Admin> GetAllActive();
         List<Admin> GetWhere(Func<Admin,bool> expression);
-        
     }
 }

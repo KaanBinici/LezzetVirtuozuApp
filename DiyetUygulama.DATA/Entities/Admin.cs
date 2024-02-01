@@ -7,13 +7,10 @@ using System.Threading.Tasks;
 
 namespace DiyetUygulama.DATA.Entities
 {
-    public class Admin : BaseEntity
+    public class Admin : BaseLogin
     {
         public int AdminId { get; set; }
         public string AdminName { get; set; }
         public string AdminSurname { get; set; }
-
-        //Navigation Properties
-        public virtual LoginInfo LoginInfo { get; set; }
     }
 }

@@ -1,0 +1,2567 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Products>
+	<Product ProductId="1">
+		<ProductName>Tam Buğday Ekmeği</ProductName>
+		<Amount>25</Amount>
+		<Unit>g</Unit>
+		<Portion>1 dilim</Portion>
+		<Carbonhydrate>10.68</Carbonhydrate>
+		<Protein>3.11</Protein>
+		<Fat>0.88</Fat>
+		<Calories>63</Calories>
+		<CategoryId>1</CategoryId>
+	</Product>
+	<Product ProductId="2">
+		<ProductName>Çavdar Ekmeği</ProductName>
+		<Amount>25</Amount>
+		<Unit>g</Unit>
+		<Portion>1 dilim</Portion>
+		<Carbonhydrate>12.07</Carbonhydrate>
+		<Protein>2.12</Protein>
+		<Fat>0.82</Fat>
+		<Calories>65</Calories>
+		<CategoryId>1</CategoryId>
+	</Product>
+	<Product ProductId="3">
+		<ProductName>Tahıllı Ekmek</ProductName>
+		<Amount>25</Amount>
+		<Unit>g</Unit>
+		<Portion>1 dilim</Portion>
+		<Carbonhydrate>10.84</Carbonhydrate>
+		<Protein>3.34</Protein>
+		<Fat>1.06</Fat>
+		<Calories>66</Calories>
+		<CategoryId>1</CategoryId>
+	</Product>
+	<Product ProductId="4">
+		<ProductName>Kepekli Ekmek</ProductName>
+		<Amount>25</Amount>
+		<Unit>g</Unit>
+		<Portion>1 dilim</Portion>
+		<Carbonhydrate>11.95</Carbonhydrate>
+		<Protein>2.2</Protein>
+		<Fat>0.85</Fat>
+		<Calories>62</Calories>
+		<CategoryId>1</CategoryId>
+	</Product>
+	<Product ProductId="5">
+		<ProductName>Beyaz Ekmek</ProductName>
+		<Amount>25</Amount>
+		<Unit>g</Unit>
+		<Portion>1 dilim</Portion>
+		<Carbonhydrate>13.62</Carbonhydrate>
+		<Protein>2.55</Protein>
+		<Fat>1</Fat>
+		<Calories>72</Calories>
+		<CategoryId>1</CategoryId>
+	</Product>
+	<Product ProductId="6">
+		<ProductName>Mısır Ekmeği</ProductName>
+		<Amount>25</Amount>
+		<Unit>g</Unit>
+		<Portion>1 dilim</Portion>
+		<Carbonhydrate>11.45</Carbonhydrate>
+		<Protein>1.08</Protein>
+		<Fat>1.31</Fat>
+		<Calories>62</Calories>
+		<CategoryId>1</CategoryId>
+	</Product>
+	<Product ProductId="7">
+		<ProductName>Sandviç Ekmeği (Beyaz)</ProductName>
+		<Amount>75</Amount>
+		<Unit>g</Unit>
+		<Portion>3 dilim beyaz ekmek</Portion>
+		<Carbonhydrate>40.86</Carbonhydrate>
+		<Protein>7.65</Protein>
+		<Fat>3</Fat>
+		<Calories>216</Calories>
+		<CategoryId>1</CategoryId>
+	</Product>
+	<Product ProductId="8">
+		<ProductName>Sandviç Ekmeği (Tahıllı)</ProductName>
+		<Amount>75</Amount>
+		<Unit>g</Unit>
+		<Portion>3 dilim tahıllı ekmek</Portion>
+		<Carbonhydrate>32.52</Carbonhydrate>
+		<Protein>10.02</Protein>
+		<Fat>3.18</Fat>
+		<Calories>198</Calories>
+		<CategoryId>1</CategoryId>
+	</Product>
+	<Product ProductId="9">
+		<ProductName>Simit</ProductName>
+		<Amount>100</Amount>
+		<Unit>g</Unit>
+		<Portion>1 adet</Portion>
+		<Carbonhydrate>69</Carbonhydrate>
+		<Protein>1</Protein>
+		<Fat>17</Fat>
+		<Calories>434</Calories>
+		<CategoryId>1</CategoryId>
+	</Product>
+	<Product ProductId="10">
+		<ProductName>Yulaf Gevreği (Musli)</ProductName>
+		<Amount>40</Amount>
+		<Unit>g</Unit>
+		<Portion>2 yemek kaşığı</Portion>
+		<Carbonhydrate>30.28</Carbonhydrate>
+		<Protein>4.48</Protein>
+		<Fat>1.32</Fat>
+		<Calories>141</Calories>
+		<CategoryId>1</CategoryId>
+	</Product>
+	<Product ProductId="11">
+		<ProductName>Sade Mısır Gevreği (Cornﬂakes)</ProductName>
+		<Amount>30</Amount>
+		<Unit>g</Unit>
+		<Portion>1 su bardağı</Portion>
+		<Carbonhydrate>24.28</Carbonhydrate>
+		<Protein>1.88</Protein>
+		<Fat>0.03</Fat>
+		<Calories>101</Calories>
+		<CategoryId>1</CategoryId>
+	</Product>
+	<Product ProductId="12">
+		<ProductName>Tam Tahıllı Gevrek</ProductName>
+		<Amount>33</Amount>
+		<Unit>g</Unit>
+		<Portion>1 su bardağı</Portion>
+		<Carbonhydrate>27.4</Carbonhydrate>
+		<Protein>2.39</Protein>
+		<Fat>1.12</Fat>
+		<Calories>124</Calories>
+		<CategoryId>1</CategoryId>
+	</Product>
+	<Product ProductId="13">
+		<ProductName>Yulaf Ezmesi</ProductName>
+		<Amount>20</Amount>
+		<Unit>g</Unit>
+		<Portion>2 yemek kaşığı</Portion>
+		<Carbonhydrate>13.4</Carbonhydrate>
+		<Protein>3.2</Protein>
+		<Fat>1.26</Fat>
+		<Calories>73</Calories>
+		<CategoryId>1</CategoryId>
+	</Product>
+	<Product ProductId="14">
+		<ProductName>Patates</ProductName>
+		<Amount>100</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>17.49</Carbonhydrate>
+		<Protein>2.05</Protein>
+		<Fat>0.09</Fat>
+		<Calories>77</Calories>
+		<CategoryId>1</CategoryId>
+	</Product>
+	<Product ProductId="15">
+		<ProductName>İnek Sütü(Tam Yağlı)</ProductName>
+		<Amount>200</Amount>
+		<Unit>ml</Unit>
+		<Portion>1 su bardağı</Portion>
+		<Carbonhydrate>8.64</Carbonhydrate>
+		<Protein>5.67</Protein>
+		<Fat>5.85</Fat>
+		<Calories>110</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="16">
+		<ProductName>İnek Sütü (Yarım Yağlı)</ProductName>
+		<Amount>200</Amount>
+		<Unit>ml</Unit>
+		<Portion>1 su bardağı</Portion>
+		<Carbonhydrate>10.84</Carbonhydrate>
+		<Protein>6.66</Protein>
+		<Fat>2.08</Fat>
+		<Calories>92</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="17">
+		<ProductName>İnek Sütü (Yağsız)</ProductName>
+		<Amount>200</Amount>
+		<Unit>ml</Unit>
+		<Portion>1 su bardağı</Portion>
+		<Carbonhydrate>10</Carbonhydrate>
+		<Protein>6.66</Protein>
+		<Fat>0.01</Fat>
+		<Calories>76</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="18">
+		<ProductName>Keçi Sütü</ProductName>
+		<Amount>200</Amount>
+		<Unit>ml</Unit>
+		<Portion>1 su bardağı</Portion>
+		<Carbonhydrate>10</Carbonhydrate>
+		<Protein>6.66</Protein>
+		<Fat>6.66</Fat>
+		<Calories>124</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="19">
+		<ProductName>Soya Sütü</ProductName>
+		<Amount>200</Amount>
+		<Unit>ml</Unit>
+		<Portion>1 su bardağı</Portion>
+		<Carbonhydrate>17.6</Carbonhydrate>
+		<Protein>4</Protein>
+		<Fat>2.4</Fat>
+		<Calories>112</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="20">
+		<ProductName>Hindistan Cevizi Sütü</ProductName>
+		<Amount>100</Amount>
+		<Unit>ml</Unit>
+		<Portion>1 çay bardağı</Portion>
+		<Carbonhydrate>7.69</Carbonhydrate>
+		<Protein>1.54</Protein>
+		<Fat>18.49</Fat>
+		<Calories>200</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="21">
+		<ProductName>Beyaz Peynir(Yarım Yağlı İnek)</ProductName>
+		<Amount>30</Amount>
+		<Unit>g</Unit>
+		<Portion>2 parmak kalınlığında</Portion>
+		<Carbonhydrate>2.44</Carbonhydrate>
+		<Protein>2.35</Protein>
+		<Fat>4.58</Fat>
+		<Calories>60</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="22">
+		<ProductName>Süzme Peynir</ProductName>
+		<Amount>30</Amount>
+		<Unit>g</Unit>
+		<Portion>2 parmak kalınlığında</Portion>
+		<Carbonhydrate>1.05</Carbonhydrate>
+		<Protein>4.05</Protein>
+		<Fat>5.4</Fat>
+		<Calories>69</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="23">
+		<ProductName>Lor Peyniri</ProductName>
+		<Amount>50</Amount>
+		<Unit>g</Unit>
+		<Portion>3 yemek kaşığı</Portion>
+		<Carbonhydrate>0.92</Carbonhydrate>
+		<Protein>8.6</Protein>
+		<Fat>0.21</Fat>
+		<Calories>43</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="24">
+		<ProductName>Light Kaşar Peyniri</ProductName>
+		<Amount>30</Amount>
+		<Unit>g</Unit>
+		<Portion>2 parmak kalınlığında</Portion>
+		<Carbonhydrate>1.2</Carbonhydrate>
+		<Protein>9.15</Protein>
+		<Fat>3.75</Fat>
+		<Calories>75.3</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="25">
+		<ProductName>Labne Peyniri</ProductName>
+		<Amount>50</Amount>
+		<Unit>g</Unit>
+		<Portion>2 yemek kaşığı</Portion>
+		<Carbonhydrate>2.25</Carbonhydrate>
+		<Protein>2.45</Protein>
+		<Fat>8.5</Fat>
+		<Calories>95.5</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="26">
+		<ProductName>Örgü Peynir</ProductName>
+		<Amount>30</Amount>
+		<Unit>g</Unit>
+		<Portion>2 parmak kalınlığında</Portion>
+		<Carbonhydrate>0.45</Carbonhydrate>
+		<Protein>8</Protein>
+		<Fat>7.05</Fat>
+		<Calories>97.2</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="27">
+		<ProductName>Dil Peyniri</ProductName>
+		<Amount>30</Amount>
+		<Unit>g</Unit>
+		<Portion>2 parmak kalınlığında</Portion>
+		<Carbonhydrate>0.6</Carbonhydrate>
+		<Protein>6.78</Protein>
+		<Fat>5.7</Fat>
+		<Calories>81</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="28">
+		<ProductName>Mozarella</ProductName>
+		<Amount>30</Amount>
+		<Unit>g</Unit>
+		<Portion>2 parmak kalınlığında</Portion>
+		<Carbonhydrate>0.66</Carbonhydrate>
+		<Protein>6.61</Protein>
+		<Fat>6.71</Fat>
+		<Calories>90</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="29">
+		<ProductName>Hellim Peyniri</ProductName>
+		<Amount>30</Amount>
+		<Unit>g</Unit>
+		<Portion>2 parmak kalınlığında</Portion>
+		<Carbonhydrate>0.25</Carbonhydrate>
+		<Protein>7.13</Protein>
+		<Fat>6.9</Fat>
+		<Calories>91.5</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="30">
+		<ProductName>Kefir (Yağlı)</ProductName>
+		<Amount>200</Amount>
+		<Unit>ml</Unit>
+		<Portion>1 su bardağı</Portion>
+		<Carbonhydrate>10</Carbonhydrate>
+		<Protein>5.6</Protein>
+		<Fat>6</Fat>
+		<Calories>120</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="31">
+		<ProductName>Kefir (Yağsız)</ProductName>
+		<Amount>200</Amount>
+		<Unit>ml</Unit>
+		<Portion>1 su bardağı</Portion>
+		<Carbonhydrate>8.06</Carbonhydrate>
+		<Protein>6.82</Protein>
+		<Fat>1.67</Fat>
+		<Calories>74</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="32">
+		<ProductName>Meyveli Kefir</ProductName>
+		<Amount>200</Amount>
+		<Unit>ml</Unit>
+		<Portion>1 su bardağı</Portion>
+		<Carbonhydrate>20</Carbonhydrate>
+		<Protein>5.4</Protein>
+		<Fat>6</Fat>
+		<Calories>156</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="33">
+		<ProductName>Süzme Yoğurt</ProductName>
+		<Amount>100</Amount>
+		<Unit>ml</Unit>
+		<Portion>1 çay bardağı</Portion>
+		<Carbonhydrate>4.5</Carbonhydrate>
+		<Protein>5.04</Protein>
+		<Fat>6.3</Fat>
+		<Calories>95</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="34">
+		<ProductName>Yoğurt (Yağlı)</ProductName>
+		<Amount>100</Amount>
+		<Unit>ml</Unit>
+		<Portion>1 çay bardağı</Portion>
+		<Carbonhydrate>3.58</Carbonhydrate>
+		<Protein>8.1</Protein>
+		<Fat>4.5</Fat>
+		<Calories>87</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="35">
+		<ProductName>Yoğurt (Yağsız)</ProductName>
+		<Amount>100</Amount>
+		<Unit>ml</Unit>
+		<Portion>1 çay bardağı</Portion>
+		<Carbonhydrate>3.24</Carbonhydrate>
+		<Protein>9.17</Protein>
+		<Fat>0.35</Fat>
+		<Calories>53</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="36">
+		<ProductName>Meyveli Yoğurt</ProductName>
+		<Amount>100</Amount>
+		<Unit>ml</Unit>
+		<Portion>1 çay bardağı</Portion>
+		<Carbonhydrate>11.06</Carbonhydrate>
+		<Protein>6.6</Protein>
+		<Fat>2.7</Fat>
+		<Calories>95</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="37">
+		<ProductName>Ayran</ProductName>
+		<Amount>200</Amount>
+		<Unit>ml</Unit>
+		<Portion>1 su bardağı</Portion>
+		<Carbonhydrate>5.6</Carbonhydrate>
+		<Protein>4</Protein>
+		<Fat>4</Fat>
+		<Calories>76</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="38">
+		<ProductName>Cacık</ProductName>
+		<Amount>200</Amount>
+		<Unit>ml</Unit>
+		<Portion>1 su bardağı</Portion>
+		<Carbonhydrate>11</Carbonhydrate>
+		<Protein>6.66</Protein>
+		<Fat>4.86</Fat>
+		<Calories>115</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="39">
+		<ProductName>Badem Sütü</ProductName>
+		<Amount>200</Amount>
+		<Unit>ml</Unit>
+		<Portion>1 su bardağı</Portion>
+		<Carbonhydrate>6</Carbonhydrate>
+		<Protein>1</Protein>
+		<Fat>2.2</Fat>
+		<Calories>48</Calories>
+		<CategoryId>2</CategoryId>
+	</Product>
+	<Product ProductId="40">
+		<ProductName>Elma</ProductName>
+		<Amount>182</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>25.13</Carbonhydrate>
+		<Protein>0.47</Protein>
+		<Fat>0.31</Fat>
+		<Calories>95</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="41">
+		<ProductName>Armut</ProductName>
+		<Amount>178</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>27.11</Carbonhydrate>
+		<Protein>0.64</Protein>
+		<Fat>0.25</Fat>
+		<Calories>101</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="42">
+		<ProductName>Portakal</ProductName>
+		<Amount>130</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>15.39</Carbonhydrate>
+		<Protein>1.23</Protein>
+		<Fat>0.16</Fat>
+		<Calories>62</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="43">
+		<ProductName>Greyfurt</ProductName>
+		<Amount>246</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>18.45</Carbonhydrate>
+		<Protein>1.35</Protein>
+		<Fat>0.25</Fat>
+		<Calories>74</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="44">
+		<ProductName>Ayva</ProductName>
+		<Amount>100</Amount>
+		<Unit>g</Unit>
+		<Portion>1 küçük boy</Portion>
+		<Carbonhydrate>15.3</Carbonhydrate>
+		<Protein>0.4</Protein>
+		<Fat>0.1</Fat>
+		<Calories>57</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="45">
+		<ProductName>Mandalina</ProductName>
+		<Amount>76</Amount>
+		<Unit>g</Unit>
+		<Portion>1 küçük boy</Portion>
+		<Carbonhydrate>10.14</Carbonhydrate>
+		<Protein>0.62</Protein>
+		<Fat>0.24</Fat>
+		<Calories>40</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="46">
+		<ProductName>Kivi</ProductName>
+		<Amount>69</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>10.12</Carbonhydrate>
+		<Protein>0.79</Protein>
+		<Fat>0.36</Fat>
+		<Calories>42</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="47">
+		<ProductName>Muz</ProductName>
+		<Amount>118</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>26.95</Carbonhydrate>
+		<Protein>1.29</Protein>
+		<Fat>0.39</Fat>
+		<Calories>105</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="48">
+		<ProductName>Kayısı</ProductName>
+		<Amount>35</Amount>
+		<Unit>g</Unit>
+		<Portion>1 küçük boy</Portion>
+		<Carbonhydrate>3.89</Carbonhydrate>
+		<Protein>0.49</Protein>
+		<Fat>0.14</Fat>
+		<Calories>17</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="49">
+		<ProductName>Çilek</ProductName>
+		<Amount>144</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>11.06</Carbonhydrate>
+		<Protein>0.96</Protein>
+		<Fat>0.43</Fat>
+		<Calories>46</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="50">
+		<ProductName>Trabzon hurması</ProductName>
+		<Amount>80</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>15.96</Carbonhydrate>
+		<Protein>0.48</Protein>
+		<Fat>0.17</Fat>
+		<Calories>60</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="51">
+		<ProductName>Kiraz</ProductName>
+		<Amount>138</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>22.09</Carbonhydrate>
+		<Protein>1.46</Protein>
+		<Fat>0.28</Fat>
+		<Calories>87</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="52">
+		<ProductName>Vişne</ProductName>
+		<Amount>103</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>12.55</Carbonhydrate>
+		<Protein>1.03</Protein>
+		<Fat>0.31</Fat>
+		<Calories>52</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="53">
+		<ProductName>Kavun</ProductName>
+		<Amount>160</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>13.06</Carbonhydrate>
+		<Protein>1.34</Protein>
+		<Fat>0.3</Fat>
+		<Calories>54</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="54">
+		<ProductName>Karpuz</ProductName>
+		<Amount>154</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>11.63</Carbonhydrate>
+		<Protein>0.94</Protein>
+		<Fat>0.23</Fat>
+		<Calories>46</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="55">
+		<ProductName>Ananas</ProductName>
+		<Amount>56</Amount>
+		<Unit>g</Unit>
+		<Portion>1 ince dilim</Portion>
+		<Carbonhydrate>7.35</Carbonhydrate>
+		<Protein>0.3</Protein>
+		<Fat>0.07</Fat>
+		<Calories>28</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="56">
+		<ProductName>Avakado</ProductName>
+		<Amount>66</Amount>
+		<Unit>g</Unit>
+		<Portion>1/3 orta boy</Portion>
+		<Carbonhydrate>5.63</Carbonhydrate>
+		<Protein>1.32</Protein>
+		<Fat>9.68</Fat>
+		<Calories>106</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="57">
+		<ProductName>Mango</ProductName>
+		<Amount>165</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>24.72</Carbonhydrate>
+		<Protein>1.35</Protein>
+		<Fat>0.63</Fat>
+		<Calories>99</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="58">
+		<ProductName>Ahududu</ProductName>
+		<Amount>123</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>14.69</Carbonhydrate>
+		<Protein>1.48</Protein>
+		<Fat>0.8</Fat>
+		<Calories>64</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="59">
+		<ProductName>Böğürtlen</ProductName>
+		<Amount>144</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>13.84</Carbonhydrate>
+		<Protein>2</Protein>
+		<Fat>0.71</Fat>
+		<Calories>62</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="60">
+		<ProductName>Yaban Mersini</ProductName>
+		<Amount>148</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>21.45</Carbonhydrate>
+		<Protein>1.1</Protein>
+		<Fat>0.49</Fat>
+		<Calories>84</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="61">
+		<ProductName>Yeşil Erik</ProductName>
+		<Amount>165</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>18.84</Carbonhydrate>
+		<Protein>1.15</Protein>
+		<Fat>0.46</Fat>
+		<Calories>76</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="62">
+		<ProductName>Kumkuat</ProductName>
+		<Amount>13</Amount>
+		<Unit>g</Unit>
+		<Portion>1 adet</Portion>
+		<Carbonhydrate>3.02</Carbonhydrate>
+		<Protein>0.36</Protein>
+		<Fat>0.16</Fat>
+		<Calories>13</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="63">
+		<ProductName>Kırmızı Erik</ProductName>
+		<Amount>135</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>21.01</Carbonhydrate>
+		<Protein>0.97</Protein>
+		<Fat>0.31</Fat>
+		<Calories>81</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="64">
+		<ProductName>Yenidünya</ProductName>
+		<Amount>148</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>18.09</Carbonhydrate>
+		<Protein>0.64</Protein>
+		<Fat>0.3</Fat>
+		<Calories>70</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="65">
+		<ProductName>İncir</ProductName>
+		<Amount>50</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>9.59</Carbonhydrate>
+		<Protein>0.38</Protein>
+		<Fat>0.15</Fat>
+		<Calories>37</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="66">
+		<ProductName>Dut</ProductName>
+		<Amount>140</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>13.72</Carbonhydrate>
+		<Protein>2.02</Protein>
+		<Fat>0.55</Fat>
+		<Calories>60</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="67">
+		<ProductName>Üzüm</ProductName>
+		<Amount>151</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>27.33</Carbonhydrate>
+		<Protein>1.09</Protein>
+		<Fat>0.24</Fat>
+		<Calories>104</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="68">
+		<ProductName>Nar</ProductName>
+		<Amount>87</Amount>
+		<Unit>g</Unit>
+		<Portion>1/2 kase</Portion>
+		<Carbonhydrate>16.27</Carbonhydrate>
+		<Protein>1.45</Protein>
+		<Fat>1.02</Fat>
+		<Calories>72</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="69">
+		<ProductName>Şeftali</ProductName>
+		<Amount>150</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>14.31</Carbonhydrate>
+		<Protein>1.36</Protein>
+		<Fat>0.38</Fat>
+		<Calories>58</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="70">
+		<ProductName>Limon</ProductName>
+		<Amount>58</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>5.41</Carbonhydrate>
+		<Protein>0.64</Protein>
+		<Fat>0.17</Fat>
+		<Calories>17</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="71">
+		<ProductName>Kuru İncir</ProductName>
+		<Amount>15</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>12.14</Carbonhydrate>
+		<Protein>0.63</Protein>
+		<Fat>0.18</Fat>
+		<Calories>47</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="72">
+		<ProductName>Kuru üzüm</ProductName>
+		<Amount>30</Amount>
+		<Unit>g</Unit>
+		<Portion>1.5 yemek kaşığı</Portion>
+		<Carbonhydrate>23.75</Carbonhydrate>
+		<Protein>0.92</Protein>
+		<Fat>14</Fat>
+		<Calories>89.7</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="73">
+		<ProductName>Kuru kayısı</ProductName>
+		<Amount>10</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>4.38</Carbonhydrate>
+		<Protein>0.24</Protein>
+		<Fat>0.04</Fat>
+		<Calories>16</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="74">
+		<ProductName>Kuru mürdüm eriği</ProductName>
+		<Amount>10</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>5.37</Carbonhydrate>
+		<Protein>0.18</Protein>
+		<Fat>0.03</Fat>
+		<Calories>20</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="75">
+		<ProductName>Kuru yaban mersini</ProductName>
+		<Amount>30</Amount>
+		<Unit>g</Unit>
+		<Portion>1.5 yemek kaşığı</Portion>
+		<Carbonhydrate>24.13</Carbonhydrate>
+		<Protein>0.12</Protein>
+		<Fat>0.4</Fat>
+		<Calories>91</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="76">
+		<ProductName>Hurma</ProductName>
+		<Amount>10</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>6.23</Carbonhydrate>
+		<Protein>0.2</Protein>
+		<Fat>0.03</Fat>
+		<Calories>23</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="77">
+		<ProductName>Kuru dut</ProductName>
+		<Amount>40</Amount>
+		<Unit>g</Unit>
+		<Portion>2 yemek kaşığı</Portion>
+		<Carbonhydrate>16.98</Carbonhydrate>
+		<Protein>0.88</Protein>
+		<Fat>0.36</Fat>
+		<Calories>67.6</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="78">
+		<ProductName>Taze Sıkılmış Meyve Suyu</ProductName>
+		<Amount>200</Amount>
+		<Unit>ml</Unit>
+		<Portion>1 su bardağı</Portion>
+		<Carbonhydrate>29.5</Carbonhydrate>
+		<Protein>0.44</Protein>
+		<Fat>0</Fat>
+		<Calories>124</Calories>
+		<CategoryId>3</CategoryId>
+	</Product>
+	<Product ProductId="79">
+		<ProductName>Domates</ProductName>
+		<Amount>123</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>4.78</Carbonhydrate>
+		<Protein>1.08</Protein>
+		<Fat>0.25</Fat>
+		<Calories>22</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="80">
+		<ProductName>Çeri Domates</ProductName>
+		<Amount>149</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>5.8</Carbonhydrate>
+		<Protein>1.31</Protein>
+		<Fat>0.3</Fat>
+		<Calories>27</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="81">
+		<ProductName>Salatalık </ProductName>
+		<Amount>100</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>3.63</Carbonhydrate>
+		<Protein>0.65</Protein>
+		<Fat>0.11</Fat>
+		<Calories>15</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="82">
+		<ProductName> Marul Kıvırcık</ProductName>
+		<Amount> 36</Amount>
+		<Unit>g</Unit>
+		<Portion> 1 kase doğranmış</Portion>
+		<Carbonhydrate> 1,03</Carbonhydrate>
+		<Protein> 0,49</Protein>
+		<Fat> 0,05</Fat>
+		<Calories> 5</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="83">
+		<ProductName>Çarliston Biber</ProductName>
+		<Amount>46</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>2.46</Carbonhydrate>
+		<Protein>0.76</Protein>
+		<Fat>0.21</Fat>
+		<Calories>12</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="84">
+		<ProductName>Kırmızı Biber</ProductName>
+		<Amount>119</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>7.18</Carbonhydrate>
+		<Protein>1.18</Protein>
+		<Fat>0.36</Fat>
+		<Calories>37</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="85">
+		<ProductName>Nane</ProductName>
+		<Amount>5</Amount>
+		<Unit>g</Unit>
+		<Portion>1 yemek kaşığı</Portion>
+		<Carbonhydrate>0.24</Carbonhydrate>
+		<Protein>0.06</Protein>
+		<Fat>0.01</Fat>
+		<Calories>1</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="86">
+		<ProductName>Reyhan/Fesleğen</ProductName>
+		<Amount>10</Amount>
+		<Unit>g</Unit>
+		<Portion>2 yemek kaşığı</Portion>
+		<Carbonhydrate>0.23</Carbonhydrate>
+		<Protein>0.13</Protein>
+		<Fat>0.03</Fat>
+		<Calories>1</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="87">
+		<ProductName>Dereotu</ProductName>
+		<Amount>10</Amount>
+		<Unit>g</Unit>
+		<Portion>2 yemek kaşığı</Portion>
+		<Carbonhydrate>0.23</Carbonhydrate>
+		<Protein>0.13</Protein>
+		<Fat>0.03</Fat>
+		<Calories>1</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="88">
+		<ProductName>Kişniş</ProductName>
+		<Amount>5</Amount>
+		<Unit>g</Unit>
+		<Portion>1 yemek kaşığı</Portion>
+		<Carbonhydrate>0.99</Carbonhydrate>
+		<Protein>0.22</Protein>
+		<Fat>0.32</Fat>
+		<Calories>5</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="89">
+		<ProductName>Biberiye</ProductName>
+		<Amount>5</Amount>
+		<Unit>g</Unit>
+		<Portion>1 yemek kaşığı</Portion>
+		<Carbonhydrate>0.77</Carbonhydrate>
+		<Protein>0.06</Protein>
+		<Fat>0.18</Fat>
+		<Calories>4</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="90">
+		<ProductName>Maydanoz</ProductName>
+		<Amount>5</Amount>
+		<Unit>g</Unit>
+		<Portion>1 yemek kaşığı</Portion>
+		<Carbonhydrate>0.24</Carbonhydrate>
+		<Protein>0.11</Protein>
+		<Fat>0.03</Fat>
+		<Calories>1</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="91">
+		<ProductName>Turp</ProductName>
+		<Amount>116</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase doğranmış</Portion>
+		<Carbonhydrate>3.94</Carbonhydrate>
+		<Protein>0.79</Protein>
+		<Fat>0.12</Fat>
+		<Calories>19</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="92">
+		<ProductName>Roka</ProductName>
+		<Amount>20</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>0.73</Carbonhydrate>
+		<Protein>0.52</Protein>
+		<Fat>0.13</Fat>
+		<Calories>5</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="93">
+		<ProductName>Kereviz Yaprağı</ProductName>
+		<Amount>101</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>3</Carbonhydrate>
+		<Protein>0.7</Protein>
+		<Fat>0.17</Fat>
+		<Calories>16</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="94">
+		<ProductName>Karnabahar</ProductName>
+		<Amount>107</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase doğranmış</Portion>
+		<Carbonhydrate>5.32</Carbonhydrate>
+		<Protein>2.05</Protein>
+		<Fat>0.3</Fat>
+		<Calories>27</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="95">
+		<ProductName>Brokoli</ProductName>
+		<Amount>91</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase doğranmış</Portion>
+		<Carbonhydrate>6.04</Carbonhydrate>
+		<Protein>2.57</Protein>
+		<Fat>0.34</Fat>
+		<Calories>31</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="96">
+		<ProductName>Brüksel Lahanası</ProductName>
+		<Amount>88</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>7.88</Carbonhydrate>
+		<Protein>2.97</Protein>
+		<Fat>0.26</Fat>
+		<Calories>38</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="97">
+		<ProductName>Beyaz Lahana</ProductName>
+		<Amount>90</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>5.16</Carbonhydrate>
+		<Protein>1.14</Protein>
+		<Fat>0.09</Fat>
+		<Calories>22</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="98">
+		<ProductName>Kırmızı Lahana</ProductName>
+		<Amount>90</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>6.56</Carbonhydrate>
+		<Protein>1.27</Protein>
+		<Fat>0.14</Fat>
+		<Calories>28</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="99">
+		<ProductName>Havuç</ProductName>
+		<Amount>61</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>5.84</Carbonhydrate>
+		<Protein>0.57</Protein>
+		<Fat>0.15</Fat>
+		<Calories>25</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="100">
+		<ProductName>Sarımsak</ProductName>
+		<Amount>5</Amount>
+		<Unit>g</Unit>
+		<Portion>1 diş</Portion>
+		<Carbonhydrate>0.99</Carbonhydrate>
+		<Protein>0.19</Protein>
+		<Fat>0.02</Fat>
+		<Calories>4</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="101">
+		<ProductName>Soğan</ProductName>
+		<Amount>110</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>10.27</Carbonhydrate>
+		<Protein>1.21</Protein>
+		<Fat>0.11</Fat>
+		<Calories>44</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="102">
+		<ProductName>Yeşil Soğan</ProductName>
+		<Amount>5</Amount>
+		<Unit>g</Unit>
+		<Portion>1 yemek kaşığı kıyılmış</Portion>
+		<Carbonhydrate>0.44</Carbonhydrate>
+		<Protein>0.11</Protein>
+		<Fat>0.01</Fat>
+		<Calories>2</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="103">
+		<ProductName>Semizotu</ProductName>
+		<Amount>43</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>1.46</Carbonhydrate>
+		<Protein>0.87</Protein>
+		<Fat>0.15</Fat>
+		<Calories>9</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="104">
+		<ProductName>Pazı</ProductName>
+		<Amount>36</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase</Portion>
+		<Carbonhydrate>1.35</Carbonhydrate>
+		<Protein>0.65</Protein>
+		<Fat>0.07</Fat>
+		<Calories>7</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="105">
+		<ProductName>Kabak</ProductName>
+		<Amount>196</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>6.1</Carbonhydrate>
+		<Protein>2.37</Protein>
+		<Fat>0.63</Fat>
+		<Calories>33</Calories>
+		<CategoryId>4</CategoryId>
+	</Product>
+	<Product ProductId="106">
+		<ProductName>Kestane (Haşlama veya Izgara)</ProductName>
+		<Amount>50</Amount>
+		<Unit>g</Unit>
+		<Portion>1/2 kase</Portion>
+		<Carbonhydrate>22.09</Carbonhydrate>
+		<Protein>0.81</Protein>
+		<Fat>0.62</Fat>
+		<Calories>98</Calories>
+		<CategoryId>5</CategoryId>
+	</Product>
+	<Product ProductId="107">
+		<ProductName>Patlamış Mısır (Yağsız/Tuzsuz)</ProductName>
+		<Amount>20</Amount>
+		<Unit>g</Unit>
+		<Portion>1 su bardağı</Portion>
+		<Carbonhydrate>15.58</Carbonhydrate>
+		<Protein>2.4</Protein>
+		<Fat>0.84</Fat>
+		<Calories>76</Calories>
+		<CategoryId>5</CategoryId>
+	</Product>
+	<Product ProductId="108">
+		<ProductName>Sarı Leblebi</ProductName>
+		<Amount>20</Amount>
+		<Unit>g</Unit>
+		<Portion>1 çay bardağı</Portion>
+		<Carbonhydrate>11.7</Carbonhydrate>
+		<Protein>3.73</Protein>
+		<Fat>1.25</Fat>
+		<Calories>71</Calories>
+		<CategoryId>5</CategoryId>
+	</Product>
+	<Product ProductId="109">
+		<ProductName>Beyaz Leblebi</ProductName>
+		<Amount>20</Amount>
+		<Unit>g</Unit>
+		<Portion>1 çay bardağı</Portion>
+		<Carbonhydrate>11.9</Carbonhydrate>
+		<Protein>3.79</Protein>
+		<Fat>1.2</Fat>
+		<Calories>72</Calories>
+		<CategoryId>5</CategoryId>
+	</Product>
+	<Product ProductId="110">
+		<ProductName>Fındık</ProductName>
+		<Amount>15</Amount>
+		<Unit>g</Unit>
+		<Portion>10-12 adet</Portion>
+		<Carbonhydrate>2.57</Carbonhydrate>
+		<Protein>2.3</Protein>
+		<Fat>9.36</Fat>
+		<Calories>97</Calories>
+		<CategoryId>5</CategoryId>
+	</Product>
+	<Product ProductId="111">
+		<ProductName>Badem</ProductName>
+		<Amount>17</Amount>
+		<Unit>g</Unit>
+		<Portion>12-14 adet</Portion>
+		<Carbonhydrate>3.62</Carbonhydrate>
+		<Protein>3.55</Protein>
+		<Fat>8.39</Fat>
+		<Calories>97</Calories>
+		<CategoryId>5</CategoryId>
+	</Product>
+	<Product ProductId="112">
+		<ProductName>Ceviz</ProductName>
+		<Amount>10</Amount>
+		<Unit>g</Unit>
+		<Portion>1 tam adet</Portion>
+		<Carbonhydrate>1.1</Carbonhydrate>
+		<Protein>1.22</Protein>
+		<Fat>5.22</Fat>
+		<Calories>52</Calories>
+		<CategoryId>5</CategoryId>
+	</Product>
+	<Product ProductId="113">
+		<ProductName>Kabak Çekirdeği</ProductName>
+		<Amount>20</Amount>
+		<Unit>g</Unit>
+		<Portion>2 yemek kaşığı</Portion>
+		<Carbonhydrate>2.68</Carbonhydrate>
+		<Protein>6.6</Protein>
+		<Fat>8.42</Fat>
+		<Calories>104.4</Calories>
+		<CategoryId>5</CategoryId>
+	</Product>
+	<Product ProductId="114">
+		<ProductName>Çiğ Kaju</ProductName>
+		<Amount>20</Amount>
+		<Unit>g</Unit>
+		<Portion>1 yemek kaşığı</Portion>
+		<Carbonhydrate>6.04</Carbonhydrate>
+		<Protein>3.64</Protein>
+		<Fat>8.77</Fat>
+		<Calories>111</Calories>
+		<CategoryId>5</CategoryId>
+	</Product>
+	<Product ProductId="115">
+		<ProductName>Galeta</ProductName>
+		<Amount>7</Amount>
+		<Unit>g</Unit>
+		<Portion>1 adet</Portion>
+		<Carbonhydrate>5.2</Carbonhydrate>
+		<Protein>0.66</Protein>
+		<Fat>0.76</Fat>
+		<Calories>32</Calories>
+		<CategoryId>5</CategoryId>
+	</Product>
+	<Product ProductId="116">
+		<ProductName>Grissini</ProductName>
+		<Amount>6</Amount>
+		<Unit>g</Unit>
+		<Portion>1 adet</Portion>
+		<Carbonhydrate>3.8</Carbonhydrate>
+		<Protein>0.52</Protein>
+		<Fat>0.48</Fat>
+		<Calories>22</Calories>
+		<CategoryId>5</CategoryId>
+	</Product>
+	<Product ProductId="117">
+		<ProductName>Grissini(ince)</ProductName>
+		<Amount>6</Amount>
+		<Unit>g</Unit>
+		<Portion>2 adet</Portion>
+		<Carbonhydrate>3.8</Carbonhydrate>
+		<Protein>0.52</Protein>
+		<Fat>0.48</Fat>
+		<Calories>22</Calories>
+		<CategoryId>5</CategoryId>
+	</Product>
+	<Product ProductId="118">
+		<ProductName>Köfte</ProductName>
+		<Amount>30</Amount>
+		<Unit>g</Unit>
+		<Portion>1 yumurta kadar </Portion>
+		<Carbonhydrate>2.4</Carbonhydrate>
+		<Protein>6.3</Protein>
+		<Fat>2.7</Fat>
+		<Calories>59</Calories>
+		<CategoryId>7</CategoryId>
+	</Product>
+	<Product ProductId="119">
+		<ProductName>Biftek</ProductName>
+		<Amount>30</Amount>
+		<Unit>g</Unit>
+		<Portion> 1 yumurta kadar</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>8.2</Protein>
+		<Fat>4.5</Fat>
+		<Calories>75.6</Calories>
+		<CategoryId>7</CategoryId>
+	</Product>
+	<Product ProductId="120">
+		<ProductName>Dana Antrikot </ProductName>
+		<Amount>50</Amount>
+		<Unit>g</Unit>
+		<Portion>1.5 yumurta kadar</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>10,73 </Protein>
+		<Fat>4,10 </Fat>
+		<Calories>82</Calories>
+		<CategoryId>7</CategoryId>
+	</Product>
+	<Product ProductId="121">
+		<ProductName>Dana Kuşbaşı</ProductName>
+		<Amount>30</Amount>
+		<Unit>g</Unit>
+		<Portion>1 yumurta kadar</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>7.44</Protein>
+		<Fat>3.7</Fat>
+		<Calories>65.1</Calories>
+		<CategoryId>7</CategoryId>
+	</Product>
+	<Product ProductId="122">
+		<ProductName>Yağsız Koyun Eti</ProductName>
+		<Amount>30</Amount>
+		<Unit>g</Unit>
+		<Portion>1 yumurta kadar</Portion>
+		<Carbonhydrate>0.02</Carbonhydrate>
+		<Protein>10.03</Protein>
+		<Fat>3.33</Fat>
+		<Calories>70</Calories>
+		<CategoryId>7</CategoryId>
+	</Product>
+	<Product ProductId="123">
+		<ProductName>Tavşan </ProductName>
+		<Amount>50</Amount>
+		<Unit>g</Unit>
+		<Portion>1.5 yumurta kadar </Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>10,03 </Protein>
+		<Fat>2,77 </Fat>
+		<Calories>68</Calories>
+		<CategoryId>8</CategoryId>
+	</Product>
+	<Product ProductId="124">
+		<ProductName>Hindi (Göğüs)</ProductName>
+		<Amount>50</Amount>
+		<Unit>g</Unit>
+		<Portion>1.5 yumurta kadar</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>11.08</Protein>
+		<Fat>1.73</Fat>
+		<Calories>63</Calories>
+		<CategoryId>8</CategoryId>
+	</Product>
+	<Product ProductId="125">
+		<ProductName>Hindi (But)</ProductName>
+		<Amount>30</Amount>
+		<Unit>g</Unit>
+		<Portion>1 yumurta kadar</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>8.36</Protein>
+		<Fat>2.95</Fat>
+		<Calories>62</Calories>
+		<CategoryId>8</CategoryId>
+	</Product>
+	<Product ProductId="126">
+		<ProductName> Tavuk (Göğüs)</ProductName>
+		<Amount>50</Amount>
+		<Unit>g</Unit>
+		<Portion> 1.5 yumurta kadar</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein> 15,27</Protein>
+		<Fat> 1,58</Fat>
+		<Calories>76</Calories>
+		<CategoryId>8</CategoryId>
+	</Product>
+	<Product ProductId="127">
+		<ProductName>Tavuk (But)</ProductName>
+		<Amount>30</Amount>
+		<Unit>g</Unit>
+		<Portion>1 yumurta kadar</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>7.25</Protein>
+		<Fat>3.88</Fat>
+		<Calories>66</Calories>
+		<CategoryId>8</CategoryId>
+	</Product>
+	<Product ProductId="128">
+		<ProductName>Tavuk (Kanat)</ProductName>
+		<Amount>30</Amount>
+		<Unit>g</Unit>
+		<Portion>1 yumurta kadar</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>9.14</Protein>
+		<Fat>2.44</Fat>
+		<Calories>61</Calories>
+		<CategoryId>8</CategoryId>
+	</Product>
+	<Product ProductId="129">
+		<ProductName>Yumurta (Haşlanmış)</ProductName>
+		<Amount>45</Amount>
+		<Unit>g</Unit>
+		<Portion>1 orta boy</Portion>
+		<Carbonhydrate>0.5</Carbonhydrate>
+		<Protein>5.66</Protein>
+		<Fat>4.77</Fat>
+		<Calories>70</Calories>
+		<CategoryId>8</CategoryId>
+	</Product>
+	<Product ProductId="130">
+		<ProductName>Somon</ProductName>
+		<Amount>50</Amount>
+		<Unit>g</Unit>
+		<Portion>1.5 yumurta kadar</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>12.29</Protein>
+		<Fat>2.64</Fat>
+		<Calories>76</Calories>
+		<CategoryId>9</CategoryId>
+	</Product>
+	<Product ProductId="131">
+		<ProductName>Somon (Füme)</ProductName>
+		<Amount>50</Amount>
+		<Unit>g</Unit>
+		<Portion>1.5 yumurta kadar</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>17.59</Protein>
+		<Fat>3.63</Fat>
+		<Calories>103</Calories>
+		<CategoryId>9</CategoryId>
+	</Product>
+	<Product ProductId="132">
+		<ProductName>Light Ton Balığı</ProductName>
+		<Amount>100</Amount>
+		<Unit>g</Unit>
+		<Portion>3 yumurta kadar</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>19.44</Protein>
+		<Fat>0.96</Fat>
+		<Calories>86</Calories>
+		<CategoryId>9</CategoryId>
+	</Product>
+	<Product ProductId="133">
+		<ProductName>Alabalık</ProductName>
+		<Amount>71</Amount>
+		<Unit>g</Unit>
+		<Portion>2.5 yumurta kadar</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>16.9</Protein>
+		<Fat>5.24</Fat>
+		<Calories>119</Calories>
+		<CategoryId>9</CategoryId>
+	</Product>
+	<Product ProductId="134">
+		<ProductName>Istakoz</ProductName>
+		<Amount>145</Amount>
+		<Unit>g</Unit>
+		<Portion> 1 kase pişmiş</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>27.55</Protein>
+		<Fat>1.25</Fat>
+		<Calories>129</Calories>
+		<CategoryId>9</CategoryId>
+	</Product>
+	<Product ProductId="135">
+		<ProductName>Levrek </ProductName>
+		<Amount>101</Amount>
+		<Unit>g</Unit>
+		<Portion>3 yumurta kadar </Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>23.87</Protein>
+		<Fat>2.59</Fat>
+		<Calories>125</Calories>
+		<CategoryId>9</CategoryId>
+	</Product>
+	<Product ProductId="136">
+		<ProductName>Çupra </ProductName>
+		<Amount>110 </Amount>
+		<Unit>g</Unit>
+		<Portion>3.5 yumurta kadar</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>21,71 </Protein>
+		<Fat>3</Fat>
+		<Calories>120</Calories>
+		<CategoryId>9</CategoryId>
+	</Product>
+	<Product ProductId="137">
+		<ProductName>Karides</ProductName>
+		<Amount>128</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase pişmiş</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>26.14</Protein>
+		<Fat>1.74</Fat>
+		<Calories>128</Calories>
+		<CategoryId>9</CategoryId>
+	</Product>
+	<Product ProductId="138">
+		<ProductName>Sazan </ProductName>
+		<Amount>85</Amount>
+		<Unit>g</Unit>
+		<Portion>3 yumurta kadar</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>19.43</Protein>
+		<Fat>6.09</Fat>
+		<Calories>138</Calories>
+		<CategoryId>9</CategoryId>
+	</Product>
+	<Product ProductId="139">
+		<ProductName> Mezgit</ProductName>
+		<Amount> 85</Amount>
+		<Unit>g</Unit>
+		<Portion>3 yumurta kadar </Portion>
+		<Carbonhydrate> 0</Carbonhydrate>
+		<Protein> 19,96</Protein>
+		<Fat> 1,44</Fat>
+		<Calories> 99</Calories>
+		<CategoryId>9</CategoryId>
+	</Product>
+	<Product ProductId="140">
+		<ProductName>İstavrit</ProductName>
+		<Amount>85</Amount>
+		<Unit>g</Unit>
+		<Portion>3 yumurta kadar</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>25.42</Protein>
+		<Fat>5.34</Fat>
+		<Calories>156</Calories>
+		<CategoryId>9</CategoryId>
+	</Product>
+	<Product ProductId="141">
+		<ProductName>Hamsi</ProductName>
+		<Amount>20</Amount>
+		<Unit>g</Unit>
+		<Portion>5 adet</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>5.78</Protein>
+		<Fat>1.94</Fat>
+		<Calories>42</Calories>
+		<CategoryId>9</CategoryId>
+	</Product>
+	<Product ProductId="142">
+		<ProductName>Palamut</ProductName>
+		<Amount>90</Amount>
+		<Unit>g</Unit>
+		<Portion>3 yumurta kadar</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>20.99</Protein>
+		<Fat>15.67</Fat>
+		<Calories>231</Calories>
+		<CategoryId>9</CategoryId>
+	</Product>
+	<Product ProductId="143">
+		<ProductName>Barbun</ProductName>
+		<Amount>85</Amount>
+		<Unit>g</Unit>
+		<Portion>3 yumurta kadar</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>21.09</Protein>
+		<Fat>4.13</Fat>
+		<Calories>128</Calories>
+		<CategoryId>9</CategoryId>
+	</Product>
+	<Product ProductId="144">
+		<ProductName>Kalkan</ProductName>
+		<Amount>85</Amount>
+		<Unit>g</Unit>
+		<Portion>3 yumurta kadar</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>17.49</Protein>
+		<Fat>3.21</Fat>
+		<Calories>104</Calories>
+		<CategoryId>9</CategoryId>
+	</Product>
+	<Product ProductId="145">
+		<ProductName>Fener</ProductName>
+		<Amount>85</Amount>
+		<Unit>g</Unit>
+		<Portion>3 yumurta kadar</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>15.78</Protein>
+		<Fat>1.66</Fat>
+		<Calories>82</Calories>
+		<CategoryId>9</CategoryId>
+	</Product>
+	<Product ProductId="146">
+		<ProductName>Ahtapot</ProductName>
+		<Amount>85</Amount>
+		<Unit>g</Unit>
+		<Portion>3 yumurta kadar</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>25.35</Protein>
+		<Fat>1.77</Fat>
+		<Calories>139</Calories>
+		<CategoryId>9</CategoryId>
+	</Product>
+	<Product ProductId="147">
+		<ProductName>Dil Balığı</ProductName>
+		<Amount>85</Amount>
+		<Unit>g</Unit>
+		<Portion>3 yumurta kadar</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>12.95</Protein>
+		<Fat>2.01</Fat>
+		<Calories>73</Calories>
+		<CategoryId>9</CategoryId>
+	</Product>
+	<Product ProductId="148">
+		<ProductName>Mercimek Çorbası</ProductName>
+		<Amount>180</Amount>
+		<Unit>g</Unit>
+		<Portion>1 su bardağı/1 kepçe</Portion>
+		<Carbonhydrate>9.63</Carbonhydrate>
+		<Protein>3.61</Protein>
+		<Fat>5.2</Fat>
+		<Calories>99</Calories>
+		<CategoryId>10</CategoryId>
+	</Product>
+	<Product ProductId="149">
+		<ProductName>Tavuk Çorbası</ProductName>
+		<Amount>180</Amount>
+		<Unit>g</Unit>
+		<Portion>1 su bardağı/1 kepçe</Portion>
+		<Carbonhydrate>7</Carbonhydrate>
+		<Protein>3.02</Protein>
+		<Fat>1.83</Fat>
+		<Calories>56</Calories>
+		<CategoryId>10</CategoryId>
+	</Product>
+	<Product ProductId="150">
+		<ProductName>Tarhana Çorbası </ProductName>
+		<Amount>180</Amount>
+		<Unit>g</Unit>
+		<Portion>1 su bardağı/1 kepçe </Portion>
+		<Carbonhydrate>26.5</Carbonhydrate>
+		<Protein>4.41</Protein>
+		<Fat>2.52</Fat>
+		<Calories>147.6</Calories>
+		<CategoryId>10</CategoryId>
+	</Product>
+	<Product ProductId="151">
+		<ProductName>Sebze Çorbası </ProductName>
+		<Amount>180 </Amount>
+		<Unit>g</Unit>
+		<Portion>1 su bardağı/1 kepçe 1 </Portion>
+		<Carbonhydrate>10,91 </Carbonhydrate>
+		<Protein>1,98 </Protein>
+		<Fat>0,81 </Fat>
+		<Calories>59</Calories>
+		<CategoryId>10</CategoryId>
+	</Product>
+	<Product ProductId="152">
+		<ProductName>Ezogelin Çorbası</ProductName>
+		<Amount>180</Amount>
+		<Unit>g</Unit>
+		<Portion>su bardağı/1 kepçe 1</Portion>
+		<Carbonhydrate>16.83</Carbonhydrate>
+		<Protein>6.21</Protein>
+		<Fat>0.3</Fat>
+		<Calories>93.6</Calories>
+		<CategoryId>10</CategoryId>
+	</Product>
+	<Product ProductId="153">
+		<ProductName>Yayla Çorbası </ProductName>
+		<Amount>180</Amount>
+		<Unit>g</Unit>
+		<Portion>su bardağı/1 kepçe 1</Portion>
+		<Carbonhydrate>9.43</Carbonhydrate>
+		<Protein>3.29</Protein>
+		<Fat>7.38</Fat>
+		<Calories>117</Calories>
+		<CategoryId>10</CategoryId>
+	</Product>
+	<Product ProductId="154">
+		<ProductName>Balkabağı Çorbası </ProductName>
+		<Amount>180</Amount>
+		<Unit>g</Unit>
+		<Portion>su bardağı/1 kepçe 1</Portion>
+		<Carbonhydrate>8.1</Carbonhydrate>
+		<Protein>1.85</Protein>
+		<Fat>1.83</Fat>
+		<Calories>53</Calories>
+		<CategoryId>10</CategoryId>
+	</Product>
+	<Product ProductId="155">
+		<ProductName>Mantar çorbası</ProductName>
+		<Amount>180</Amount>
+		<Unit>g</Unit>
+		<Portion>su bardağı/1 kepçe</Portion>
+		<Carbonhydrate>10.32</Carbonhydrate>
+		<Protein>4.4</Protein>
+		<Fat>7.15</Fat>
+		<Calories>123</Calories>
+		<CategoryId>10</CategoryId>
+	</Product>
+	<Product ProductId="156">
+		<ProductName>Brokoli Çorbası</ProductName>
+		<Amount>180</Amount>
+		<Unit>g</Unit>
+		<Portion>1 su bardağı/1 kepçe</Portion>
+		<Carbonhydrate>13.6</Carbonhydrate>
+		<Protein>6.19</Protein>
+		<Fat>9.03</Fat>
+		<Calories>156</Calories>
+		<CategoryId>10</CategoryId>
+	</Product>
+	<Product ProductId="157">
+		<ProductName>Lahana Çorbası</ProductName>
+		<Amount>180</Amount>
+		<Unit>g</Unit>
+		<Portion>1 su bardağı/1 kepçe</Portion>
+		<Carbonhydrate>5.65</Carbonhydrate>
+		<Protein>2.88</Protein>
+		<Fat>2.39</Fat>
+		<Calories>53</Calories>
+		<CategoryId>10</CategoryId>
+	</Product>
+	<Product ProductId="158">
+		<ProductName>Domates Çorbası</ProductName>
+		<Amount>180</Amount>
+		<Unit>g</Unit>
+		<Portion>1 su bardağı/1 kepçe</Portion>
+		<Carbonhydrate>12.91</Carbonhydrate>
+		<Protein>1.67</Protein>
+		<Fat>1.1</Fat>
+		<Calories>68</Calories>
+		<CategoryId>10</CategoryId>
+	</Product>
+	<Product ProductId="159">
+		<ProductName>Sade Salata(karışık yeşillik)</ProductName>
+		<Amount>55</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase doğranmış</Portion>
+		<Carbonhydrate>1.76</Carbonhydrate>
+		<Protein>0.84</Protein>
+		<Fat>0.13</Fat>
+		<Calories>9</Calories>
+		<CategoryId>11</CategoryId>
+	</Product>
+	<Product ProductId="160">
+		<ProductName>Mercimekli Lor Peynirli Salata</ProductName>
+		<Amount>255</Amount>
+		<Unit>g</Unit>
+		<Portion>1 porsiyon</Portion>
+		<Carbonhydrate>28</Carbonhydrate>
+		<Protein>2.7</Protein>
+		<Fat>5.1</Fat>
+		<Calories>180</Calories>
+		<CategoryId>11</CategoryId>
+	</Product>
+	<Product ProductId="161">
+		<ProductName>Tavuklu Salata</ProductName>
+		<Amount>255</Amount>
+		<Unit>g</Unit>
+		<Portion>1 porsiyon</Portion>
+		<Carbonhydrate>5.28</Carbonhydrate>
+		<Protein>31.38</Protein>
+		<Fat>8.29</Fat>
+		<Calories>225</Calories>
+		<CategoryId>11</CategoryId>
+	</Product>
+	<Product ProductId="162">
+		<ProductName>Etli Salata</ProductName>
+		<Amount>260</Amount>
+		<Unit>g</Unit>
+		<Portion>1 porsiyon</Portion>
+		<Carbonhydrate>5.28</Carbonhydrate>
+		<Protein>24.84</Protein>
+		<Fat>16.49</Fat>
+		<Calories>267</Calories>
+		<CategoryId>11</CategoryId>
+	</Product>
+	<Product ProductId="163">
+		<ProductName>Ton Balıklı Salata</ProductName>
+		<Amount>270</Amount>
+		<Unit>g</Unit>
+		<Portion>1 porsiyon</Portion>
+		<Carbonhydrate>5.28</Carbonhydrate>
+		<Protein>21.96</Protein>
+		<Fat>6.35</Fat>
+		<Calories>215</Calories>
+		<CategoryId>11</CategoryId>
+	</Product>
+	<Product ProductId="164">
+		<ProductName>Kısır</ProductName>
+		<Amount>60</Amount>
+		<Unit>g</Unit>
+		<Portion>4 yemek kaşığı</Portion>
+		<Carbonhydrate>15.84</Carbonhydrate>
+		<Protein>2.71</Protein>
+		<Fat>4.64</Fat>
+		<Calories>108</Calories>
+		<CategoryId>11</CategoryId>
+	</Product>
+	<Product ProductId="165">
+		<ProductName>Mercimek Köftesi</ProductName>
+		<Amount>30</Amount>
+		<Unit>g</Unit>
+		<Portion>2 yemek kaşığı</Portion>
+		<Carbonhydrate>9.95</Carbonhydrate>
+		<Protein>2.75</Protein>
+		<Fat>2.41</Fat>
+		<Calories>70</Calories>
+		<CategoryId>11</CategoryId>
+	</Product>
+	<Product ProductId="166">
+		<ProductName>Tabule Salatası</ProductName>
+		<Amount>370</Amount>
+		<Unit>g</Unit>
+		<Portion>1 porsiyon</Portion>
+		<Carbonhydrate>51</Carbonhydrate>
+		<Protein>14.4</Protein>
+		<Fat>33.3</Fat>
+		<Calories>588</Calories>
+		<CategoryId>11</CategoryId>
+	</Product>
+	<Product ProductId="167">
+		<ProductName>Lor Peynirli Yumurtalı Salata</ProductName>
+		<Amount>260</Amount>
+		<Unit>g</Unit>
+		<Portion>1 porsiyon</Portion>
+		<Carbonhydrate>6.7</Carbonhydrate>
+		<Protein>16.78</Protein>
+		<Fat>9.81</Fat>
+		<Calories>225</Calories>
+		<CategoryId>11</CategoryId>
+	</Product>
+	<Product ProductId="168">
+		<ProductName>Ispanak Yemeği (Pirinçli veya Bulgurlu)</ProductName>
+		<Amount>100</Amount>
+		<Unit>g</Unit>
+		<Portion>5 yemek kaşığı</Portion>
+		<Carbonhydrate>5.09</Carbonhydrate>
+		<Protein>2.11</Protein>
+		<Fat>10.3</Fat>
+		<Calories>115</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="169">
+		<ProductName>Ispanak Yemeği (Etli,Kıymalı,Yumurtalı)</ProductName>
+		<Amount>130</Amount>
+		<Unit>g</Unit>
+		<Portion>6 yemek kaşığı</Portion>
+		<Carbonhydrate>6.29</Carbonhydrate>
+		<Protein>5.26</Protein>
+		<Fat>11.65</Fat>
+		<Calories>144.5</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="170">
+		<ProductName>ZeytinYağlı Semizotu (Pirinçli veya Bulgurlu)</ProductName>
+		<Amount>100</Amount>
+		<Unit>g</Unit>
+		<Portion>5 yemek kaşığı</Portion>
+		<Carbonhydrate>4.98</Carbonhydrate>
+		<Protein>1.29</Protein>
+		<Fat>10.26</Fat>
+		<Calories>112</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="171">
+		<ProductName>Semizotu Yemeği (Etli veya Kıymalı)</ProductName>
+		<Amount>130</Amount>
+		<Unit>g</Unit>
+		<Portion>6 yemek kaşığı</Portion>
+		<Carbonhydrate>6.18</Carbonhydrate>
+		<Protein>4.44</Protein>
+		<Fat>11.00</Fat>
+		<Calories>141.5</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="172">
+		<ProductName>ZeytinYağlı Pazı (Pirinçli veya Bulgurlu)</ProductName>
+		<Amount>100</Amount>
+		<Unit>g</Unit>
+		<Portion>5 yemek kaşığı</Portion>
+		<Carbonhydrate>11.89</Carbonhydrate>
+		<Protein>3.74</Protein>
+		<Fat>7.18</Fat>
+		<Calories>131</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="173">
+		<ProductName>Pazı Yemeği (Etli veya Kıymalı)</ProductName>
+		<Amount>130</Amount>
+		<Unit>g</Unit>
+		<Portion>6 yemek kaşığı</Portion>
+		<Carbonhydrate>13.09</Carbonhydrate>
+		<Protein>6.89</Protein>
+		<Fat>8.53</Fat>
+		<Calories>160</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="174">
+		<ProductName>ZeytinYağlı Taze Fasülye</ProductName>
+		<Amount>100</Amount>
+		<Unit>g</Unit>
+		<Portion>5 yemek kaşığı</Portion>
+		<Carbonhydrate>21.39</Carbonhydrate>
+		<Protein>5.54</Protein>
+		<Fat>5.15</Fat>
+		<Calories>151</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="175">
+		<ProductName>Taze Fasulye Yemeği (Etli veya Kıymalı)</ProductName>
+		<Amount>130</Amount>
+		<Unit>g</Unit>
+		<Portion>6 yemek kaşığı</Portion>
+		<Carbonhydrate>22.59</Carbonhydrate>
+		<Protein>8.69</Protein>
+		<Fat>6.5</Fat>
+		<Calories>180.5</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="176">
+		<ProductName>ZeytinYağlı Pırasa(Pirinçli ya da Nohutlu)</ProductName>
+		<Amount>100</Amount>
+		<Unit>g</Unit>
+		<Portion>5 yemek kaşığı</Portion>
+		<Carbonhydrate>7.25</Carbonhydrate>
+		<Protein>0.91</Protein>
+		<Fat>10.27</Fat>
+		<Calories>120</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="177">
+		<ProductName>Bezelye Yemeği (Havuçlu)</ProductName>
+		<Amount>100</Amount>
+		<Unit>g</Unit>
+		<Portion>5 yemek kaşığı</Portion>
+		<Carbonhydrate>11.07</Carbonhydrate>
+		<Protein>3.48</Protein>
+		<Fat>10.38</Fat>
+		<Calories>147</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="178">
+		<ProductName>Bezelye Yemeği (Etli/Tavuklu/Kıymalı)</ProductName>
+		<Amount>130</Amount>
+		<Unit>g</Unit>
+		<Portion>6 yemek kaşığı</Portion>
+		<Carbonhydrate>12.27</Carbonhydrate>
+		<Protein>6.63</Protein>
+		<Fat>11.73</Fat>
+		<Calories>176.5</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="179">
+		<ProductName>ZeytinYağlı Brokoli</ProductName>
+		<Amount>100</Amount>
+		<Unit>g</Unit>
+		<Portion>5 yemek kaşığı</Portion>
+		<Carbonhydrate>7.14</Carbonhydrate>
+		<Protein>2.37</Protein>
+		<Fat>5.41</Fat>
+		<Calories>80</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="180">
+		<ProductName>Brokoli Yemeği (Etli/Kıymalı)</ProductName>
+		<Amount>130</Amount>
+		<Unit>g</Unit>
+		<Portion>6 yemek kaşığı</Portion>
+		<Carbonhydrate>8.34</Carbonhydrate>
+		<Protein>5.52</Protein>
+		<Fat>6.76</Fat>
+		<Calories>110</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="181">
+		<ProductName>Karnabahar Yemeği</ProductName>
+		<Amount>100</Amount>
+		<Unit>g</Unit>
+		<Portion>5 yemek kaşığı</Portion>
+		<Carbonhydrate>5.29</Carbonhydrate>
+		<Protein>1.48</Protein>
+		<Fat>10.41</Fat>
+		<Calories>115</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="182">
+		<ProductName>Karnabahar Yemeği (Etli/Tavuklu/Kıymalı)</ProductName>
+		<Amount>130</Amount>
+		<Unit>g</Unit>
+		<Portion>6 yemek kaşığı</Portion>
+		<Carbonhydrate>6.45</Carbonhydrate>
+		<Protein>4.63</Protein>
+		<Fat>11.76</Fat>
+		<Calories>144.5</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="183">
+		<ProductName>Bamya Yemeği</ProductName>
+		<Amount>100</Amount>
+		<Unit>g</Unit>
+		<Portion>5 yemek kaşığı</Portion>
+		<Carbonhydrate>4.68</Carbonhydrate>
+		<Protein>1.06</Protein>
+		<Fat>10.57</Fat>
+		<Calories>113</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="184">
+		<ProductName>Bamya Yemeği (Etli/Kıymalı)</ProductName>
+		<Amount>130</Amount>
+		<Unit>g</Unit>
+		<Portion>6 yemek kaşığı</Portion>
+		<Carbonhydrate>5.88</Carbonhydrate>
+		<Protein>4.21</Protein>
+		<Fat>11.92</Fat>
+		<Calories>142.5</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="185">
+		<ProductName>ZeytinYağlı Türlü</ProductName>
+		<Amount>100</Amount>
+		<Unit>g</Unit>
+		<Portion>5 yemek kaşığı</Portion>
+		<Carbonhydrate>8.68</Carbonhydrate>
+		<Protein>1.33</Protein>
+		<Fat>8.87</Fat>
+		<Calories>112</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="186">
+		<ProductName>Etli Türlü Yemeği</ProductName>
+		<Amount>130</Amount>
+		<Unit>g</Unit>
+		<Portion>6 yemek kaşığı</Portion>
+		<Carbonhydrate>9.88</Carbonhydrate>
+		<Protein>4.48</Protein>
+		<Fat>10.22</Fat>
+		<Calories>141.5</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="187">
+		<ProductName>ZeytinYağlı Bakla</ProductName>
+		<Amount>100</Amount>
+		<Unit>g</Unit>
+		<Portion>5 yemek kaşığı</Portion>
+		<Carbonhydrate>9.76</Carbonhydrate>
+		<Protein>3.32</Protein>
+		<Fat>10.69</Fat>
+		<Calories>145</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="188">
+		<ProductName>ZeytinYağlı Kereviz</ProductName>
+		<Amount>100</Amount>
+		<Unit>g</Unit>
+		<Portion>5 yemek kaşığı</Portion>
+		<Carbonhydrate>7.14</Carbonhydrate>
+		<Protein>1.92</Protein>
+		<Fat>6.37</Fat>
+		<Calories>90</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="189">
+		<ProductName>ZeytinYağlı Enginar</ProductName>
+		<Amount>100</Amount>
+		<Unit>g</Unit>
+		<Portion>5 yemek kaşığı</Portion>
+		<Carbonhydrate>12.09</Carbonhydrate>
+		<Protein>2.93</Protein>
+		<Fat>10.71</Fat>
+		<Calories>146</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="190">
+		<ProductName>Mantar sote (Etli/Tavuklu)</ProductName>
+		<Amount>130</Amount>
+		<Unit>g</Unit>
+		<Portion>5 yemek kaşığı</Portion>
+		<Carbonhydrate>5.95</Carbonhydrate>
+		<Protein>1.67</Protein>
+		<Fat>10.42</Fat>
+		<Calories>118</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="191">
+		<ProductName>Sebze Sote (Havuç,Yeşil kabak,brokoli)</ProductName>
+		<Amount>200</Amount>
+		<Unit>g</Unit>
+		<Portion>10 yemek kaşığı</Portion>
+		<Carbonhydrate>4.55</Carbonhydrate>
+		<Protein>0.94</Protein>
+		<Fat>10.19</Fat>
+		<Calories>90</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="192">
+		<ProductName>ZeytinYağlı Sebze Dolması</ProductName>
+		<Amount>200</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase kadar</Portion>
+		<Carbonhydrate>13.59</Carbonhydrate>
+		<Protein>5.6</Protein>
+		<Fat>13.59</Fat>
+		<Calories>258</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="193">
+		<ProductName>ZeytinYağlı yaprak Sarma</ProductName>
+		<Amount>60</Amount>
+		<Unit>g</Unit>
+		<Portion>3 adet</Portion>
+		<Carbonhydrate>8.32</Carbonhydrate>
+		<Protein>1.33</Protein>
+		<Fat>8.15</Fat>
+		<Calories>108</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="194">
+		<ProductName>Etli Sebze Dolması</ProductName>
+		<Amount>200</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase kadar</Portion>
+		<Carbonhydrate>8.3</Carbonhydrate>
+		<Protein>18.67</Protein>
+		<Fat>28.17</Fat>
+		<Calories>358</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="195">
+		<ProductName>Etli Yaprak Sarma</ProductName>
+		<Amount>100</Amount>
+		<Unit>g</Unit>
+		<Portion>5-6 adet</Portion>
+		<Carbonhydrate>11.24</Carbonhydrate>
+		<Protein>6.23</Protein>
+		<Fat>12.32</Fat>
+		<Calories>176</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="196">
+		<ProductName>ZeytinYağlı Kabak</ProductName>
+		<Amount>100</Amount>
+		<Unit>g</Unit>
+		<Portion>5 yemek kaşığı</Portion>
+		<Carbonhydrate>5.19</Carbonhydrate>
+		<Protein>0.81</Protein>
+		<Fat>10.18</Fat>
+		<Calories>111</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="197">
+		<ProductName>Kabak Yemeği(Etli/Kıymalı)</ProductName>
+		<Amount>130</Amount>
+		<Unit>g</Unit>
+		<Portion>6 yemek kaşığı</Portion>
+		<Carbonhydrate>6.39</Carbonhydrate>
+		<Protein>3.96</Protein>
+		<Fat>11.53</Fat>
+		<Calories>140.5</Calories>
+		<CategoryId>12</CategoryId>
+	</Product>
+	<Product ProductId="198">
+		<ProductName>Yeşil Kabak</ProductName>
+		<Amount>100</Amount>
+		<Unit>g</Unit>
+		<Portion>1 küçük boy</Portion>
+		<Carbonhydrate>2.69</Carbonhydrate>
+		<Protein>1.14</Protein>
+		<Fat>0.36</Fat>
+		<Calories>15</Calories>
+		<CategoryId>13</CategoryId>
+	</Product>
+	<Product ProductId="199">
+		<ProductName>Ispanak</ProductName>
+		<Amount>180</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase haşlanmış</Portion>
+		<Carbonhydrate>1.09</Carbonhydrate>
+		<Protein>0.86</Protein>
+		<Fat>0.12</Fat>
+		<Calories>7</Calories>
+		<CategoryId>13</CategoryId>
+	</Product>
+	<Product ProductId="200">
+		<ProductName>Semizotu</ProductName>
+		<Amount>180</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase haşlanmış</Portion>
+		<Carbonhydrate>1.47</Carbonhydrate>
+		<Protein>0.56</Protein>
+		<Fat>0.04</Fat>
+		<Calories>7</Calories>
+		<CategoryId>13</CategoryId>
+	</Product>
+	<Product ProductId="201">
+		<ProductName>Pazı</ProductName>
+		<Amount>144</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase kıyılmış</Portion>
+		<Carbonhydrate>7.89</Carbonhydrate>
+		<Protein>3.7</Protein>
+		<Fat>0.28</Fat>
+		<Calories>39</Calories>
+		<CategoryId>13</CategoryId>
+	</Product>
+	<Product ProductId="202">
+		<ProductName>Karnabahar</ProductName>
+		<Amount>124</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase haşlanmış</Portion>
+		<Carbonhydrate>5.1</Carbonhydrate>
+		<Protein>2.28</Protein>
+		<Fat>0.56</Fat>
+		<Calories>29</Calories>
+		<CategoryId>13</CategoryId>
+	</Product>
+	<Product ProductId="203">
+		<ProductName>Brokoli</ProductName>
+		<Amount>156</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase haşlanmış</Portion>
+		<Carbonhydrate>11.2</Carbonhydrate>
+		<Protein>3.71</Protein>
+		<Fat>0.64</Fat>
+		<Calories>55</Calories>
+		<CategoryId>13</CategoryId>
+	</Product>
+	<Product ProductId="204">
+		<ProductName>Brüksel Lahanası</ProductName>
+		<Amount>156</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase haşlanmış</Portion>
+		<Carbonhydrate>11.08</Carbonhydrate>
+		<Protein>3.98</Protein>
+		<Fat>0.78</Fat>
+		<Calories>56</Calories>
+		<CategoryId>13</CategoryId>
+	</Product>
+	<Product ProductId="205">
+		<ProductName>Taze Fasülye</ProductName>
+		<Amount>125</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase haşlanmış</Portion>
+		<Carbonhydrate>9.85</Carbonhydrate>
+		<Protein>2.36</Protein>
+		<Fat>0.35</Fat>
+		<Calories>44</Calories>
+		<CategoryId>13</CategoryId>
+	</Product>
+	<Product ProductId="206">
+		<ProductName>Havuç</ProductName>
+		<Amount>156</Amount>
+		<Unit>g</Unit>
+		<Portion>1 kase haşlanmış</Portion>
+		<Carbonhydrate>12.82</Carbonhydrate>
+		<Protein>1.19</Protein>
+		<Fat>0.28</Fat>
+		<Calories>55</Calories>
+		<CategoryId>13</CategoryId>
+	</Product>
+	<Product ProductId="207">
+		<ProductName>Peynirli omlet</ProductName>
+		<Amount>130</Amount>
+		<Unit>g</Unit>
+		<Portion>2 yumurta + 1 peynir</Portion>
+		<Carbonhydrate>2.05</Carbonhydrate>
+		<Protein>15.37</Protein>
+		<Fat>14.9</Fat>
+		<Calories>254</Calories>
+		<CategoryId>14</CategoryId>
+	</Product>
+	<Product ProductId="208">
+		<ProductName>Mantarlı omlet</ProductName>
+		<Amount>150</Amount>
+		<Unit>g</Unit>
+		<Portion>2 yumurta</Portion>
+		<Carbonhydrate>3.69</Carbonhydrate>
+		<Protein>12.46</Protein>
+		<Fat>9.9</Fat>
+		<Calories>205</Calories>
+		<CategoryId>14</CategoryId>
+	</Product>
+	<Product ProductId="209">
+		<ProductName>Menemen</ProductName>
+		<Amount>150</Amount>
+		<Unit>g</Unit>
+		<Portion>2 yumurta</Portion>
+		<Carbonhydrate>3.69</Carbonhydrate>
+		<Protein>12.46</Protein>
+		<Fat>9.9</Fat>
+		<Calories>205</Calories>
+		<CategoryId>14</CategoryId>
+	</Product>
+	<Product ProductId="210">
+		<ProductName>Kaşarlı omlet</ProductName>
+		<Amount>130</Amount>
+		<Unit>g</Unit>
+		<Portion>2 yumurta + 1 kaşar</Portion>
+		<Carbonhydrate>2.2</Carbonhydrate>
+		<Protein>20.27</Protein>
+		<Fat>13.29</Fat>
+		<Calories>260.3</Calories>
+		<CategoryId>14</CategoryId>
+	</Product>
+	<Product ProductId="211">
+		<ProductName>Sebzeli omlet</ProductName>
+		<Amount>150</Amount>
+		<Unit>g</Unit>
+		<Portion>2 yumurta</Portion>
+		<Carbonhydrate>3.69</Carbonhydrate>
+		<Protein>12.46</Protein>
+		<Fat>9.9</Fat>
+		<Calories>205</Calories>
+		<CategoryId>14</CategoryId>
+	</Product>
+	<Product ProductId="212">
+		<ProductName>Yulaﬂı omlet</ProductName>
+		<Amount>120</Amount>
+		<Unit>g</Unit>
+		<Portion>2 yumurta + 2 y.k yulaf ezmesi</Portion>
+		<Carbonhydrate>14.4</Carbonhydrate>
+		<Protein>14.52</Protein>
+		<Fat>10.8</Fat>
+		<Calories>258</Calories>
+		<CategoryId>14</CategoryId>
+	</Product>
+	<Product ProductId="213">
+		<ProductName>Omlet Sade</ProductName>
+		<Amount>95</Amount>
+		<Unit>g</Unit>
+		<Portion>2 yumurta</Portion>
+		<Carbonhydrate>1</Carbonhydrate>
+		<Protein>11.32</Protein>
+		<Fat>14.9</Fat>
+		<Calories>185</Calories>
+		<CategoryId>14</CategoryId>
+	</Product>
+	<Product ProductId="214">
+		<ProductName>Mercimek Yemeği</ProductName>
+		<Amount>60</Amount>
+		<Unit>g</Unit>
+		<Portion>3 yemek kaşığı</Portion>
+		<Carbonhydrate>8.54</Carbonhydrate>
+		<Protein>3.29</Protein>
+		<Fat>6.22</Fat>
+		<Calories>100.2</Calories>
+		<CategoryId>15</CategoryId>
+	</Product>
+	<Product ProductId="215">
+		<ProductName>Mercimek Yemeği(Etli/Kıymalı)</ProductName>
+		<Amount>90</Amount>
+		<Unit>g</Unit>
+		<Portion>4 yemek kaşığı</Portion>
+		<Carbonhydrate>10.94</Carbonhydrate>
+		<Protein>9.59</Protein>
+		<Fat>8.92</Fat>
+		<Calories>160</Calories>
+		<CategoryId>15</CategoryId>
+	</Product>
+	<Product ProductId="216">
+		<ProductName>Nohut Yemeği</ProductName>
+		<Amount>60</Amount>
+		<Unit>g</Unit>
+		<Portion>3 yemek kaşığı</Portion>
+		<Carbonhydrate>9.37</Carbonhydrate>
+		<Protein>1.93</Protein>
+		<Fat>6.47</Fat>
+		<Calories>101.4</Calories>
+		<CategoryId>15</CategoryId>
+	</Product>
+	<Product ProductId="217">
+		<ProductName>Nohut Yemeği(Etli/Kıymalı)</ProductName>
+		<Amount>90</Amount>
+		<Unit>g</Unit>
+		<Portion>4 yemek kaşığı</Portion>
+		<Carbonhydrate>11.77</Carbonhydrate>
+		<Protein>8.23</Protein>
+		<Fat>9.17</Fat>
+		<Calories>160.4</Calories>
+		<CategoryId>15</CategoryId>
+	</Product>
+	<Product ProductId="218">
+		<ProductName>Kuru Fasülye Yemeği</ProductName>
+		<Amount>60</Amount>
+		<Unit>g</Unit>
+		<Portion>3 yemek kaşığı</Portion>
+		<Carbonhydrate>9.37</Carbonhydrate>
+		<Protein>1.93</Protein>
+		<Fat>6.47</Fat>
+		<Calories>101.4</Calories>
+		<CategoryId>15</CategoryId>
+	</Product>
+	<Product ProductId="219">
+		<ProductName>Kuru Fasülye Yemeği (Etli/Kıymalı)</ProductName>
+		<Amount>90</Amount>
+		<Unit>g</Unit>
+		<Portion>4 yemek kaşığı</Portion>
+		<Carbonhydrate>11.77</Carbonhydrate>
+		<Protein>8.23</Protein>
+		<Fat>9.17</Fat>
+		<Calories>160.4</Calories>
+		<CategoryId>15</CategoryId>
+	</Product>
+	<Product ProductId="220">
+		<ProductName>Bulgur Pilavı</ProductName>
+		<Amount>60</Amount>
+		<Unit>g</Unit>
+		<Portion>3 yemek kaşığı</Portion>
+		<Carbonhydrate>13.43</Carbonhydrate>
+		<Protein>2.2</Protein>
+		<Fat>1.57</Fat>
+		<Calories>80</Calories>
+		<CategoryId>15</CategoryId>
+	</Product>
+	<Product ProductId="221">
+		<ProductName>Bulgur Pilavı (Sebzeli)</ProductName>
+		<Amount>90</Amount>
+		<Unit>g</Unit>
+		<Portion>4 yemek kaşığı</Portion>
+		<Carbonhydrate>18.93</Carbonhydrate>
+		<Protein>3.25</Protein>
+		<Fat>2.07</Fat>
+		<Calories>108</Calories>
+		<CategoryId>15</CategoryId>
+	</Product>
+	<Product ProductId="222">
+		<ProductName>Pirinç Pilavı</ProductName>
+		<Amount>60</Amount>
+		<Unit>g</Unit>
+		<Portion>3 yemek kaşığı</Portion>
+		<Carbonhydrate>12.94</Carbonhydrate>
+		<Protein>1.24</Protein>
+		<Fat>1.94</Fat>
+		<Calories>75</Calories>
+		<CategoryId>15</CategoryId>
+	</Product>
+	<Product ProductId="223">
+		<ProductName>Pirinç Pilavı(Sebzeli)</ProductName>
+		<Amount>90</Amount>
+		<Unit>g</Unit>
+		<Portion>4 yemek kaşığı</Portion>
+		<Carbonhydrate>18.44</Carbonhydrate>
+		<Protein>2.29</Protein>
+		<Fat>2.44</Fat>
+		<Calories>103</Calories>
+		<CategoryId>15</CategoryId>
+	</Product>
+	<Product ProductId="224">
+		<ProductName>Şehriye Pilavı</ProductName>
+		<Amount>60</Amount>
+		<Unit>g</Unit>
+		<Portion>3 yemek kaşığı</Portion>
+		<Carbonhydrate>14.67</Carbonhydrate>
+		<Protein>0.2</Protein>
+		<Fat>1.96</Fat>
+		<Calories>77.4</Calories>
+		<CategoryId>15</CategoryId>
+	</Product>
+	<Product ProductId="225">
+		<ProductName>Makarna (Haşlama ve Yağsız)</ProductName>
+		<Amount>60</Amount>
+		<Unit>g</Unit>
+		<Portion>3 yemek kaşığı</Portion>
+		<Carbonhydrate>15.07</Carbonhydrate>
+		<Protein>2.62</Protein>
+		<Fat>0.58</Fat>
+		<Calories>74.4</Calories>
+		<CategoryId>15</CategoryId>
+	</Product>
+	<Product ProductId="226">
+		<ProductName>Makarna (Kıymalı)</ProductName>
+		<Amount>90</Amount>
+		<Unit>g</Unit>
+		<Portion>4 yemek kaşığı</Portion>
+		<Carbonhydrate>17.47</Carbonhydrate>
+		<Protein>8.92</Protein>
+		<Fat>3.28</Fat>
+		<Calories>133.4</Calories>
+		<CategoryId>15</CategoryId>
+	</Product>
+	<Product ProductId="227">
+		<ProductName>Makarna(Peynirli)</ProductName>
+		<Amount>90</Amount>
+		<Unit>g</Unit>
+		<Portion>4 yemek kaşığı</Portion>
+		<Carbonhydrate>15.99</Carbonhydrate>
+		<Protein>11.22</Protein>
+		<Fat>0.79</Fat>
+		<Calories>117.4</Calories>
+		<CategoryId>15</CategoryId>
+	</Product>
+	<Product ProductId="228">
+		<ProductName>ZeytinYağlı Barbunya</ProductName>
+		<Amount>60</Amount>
+		<Unit>g</Unit>
+		<Portion>3 yemek kaşığı</Portion>
+		<Carbonhydrate>9.37</Carbonhydrate>
+		<Protein>1.93</Protein>
+		<Fat>6.47</Fat>
+		<Calories>101.4</Calories>
+		<CategoryId>15</CategoryId>
+	</Product>
+	<Product ProductId="229">
+		<ProductName>ZeytinYağı</ProductName>
+		<Amount>5</Amount>
+		<Unit>g</Unit>
+		<Portion>1 tatlı kaşığı</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>0</Protein>
+		<Fat>5</Fat>
+		<Calories>45</Calories>
+		<CategoryId>6</CategoryId>
+	</Product>
+	<Product ProductId="230">
+		<ProductName>Fındık Yağı</ProductName>
+		<Amount>5</Amount>
+		<Unit>g</Unit>
+		<Portion>1 tatlı kaşığı</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>0</Protein>
+		<Fat>5</Fat>
+		<Calories>45</Calories>
+		<CategoryId>6</CategoryId>
+	</Product>
+	<Product ProductId="231">
+		<ProductName>Ceviz Yağı</ProductName>
+		<Amount>5</Amount>
+		<Unit>g</Unit>
+		<Portion>1 tatlı kaşığı</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>0</Protein>
+		<Fat>5</Fat>
+		<Calories>45</Calories>
+		<CategoryId>6</CategoryId>
+	</Product>
+	<Product ProductId="232">
+		<ProductName>TereYağ</ProductName>
+		<Amount>5</Amount>
+		<Unit>g</Unit>
+		<Portion>1 tatlı kaşığı</Portion>
+		<Carbonhydrate>0</Carbonhydrate>
+		<Protein>0.04</Protein>
+		<Fat>4.06</Fat>
+		<Calories>36</Calories>
+		<CategoryId>6</CategoryId>
+	</Product>
+	<Product ProductId="233">
+		<ProductName>Zeytin (Yeşil/Siyah)</ProductName>
+		<Amount>40</Amount>
+		<Unit>g</Unit>
+		<Portion>4-5 adet</Portion>
+		<Carbonhydrate>2.48</Carbonhydrate>
+		<Protein>0.33</Protein>
+		<Fat>4.23</Fat>
+		<Calories>45</Calories>
+		<CategoryId>6</CategoryId>
+	</Product>
+</Products>
+

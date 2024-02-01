@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Categories>
+	<Category CategoryId="1">
+		<CategoryName>Tahil Urunleri</CategoryName>
+	</Category>
+	<Category CategoryId="2">
+		<CategoryName>Sut Urunleri</CategoryName>
+	</Category>
+	<Category CategoryId="3">
+		<CategoryName>Meyveler</CategoryName>
+	</Category>
+	<Category CategoryId="4">
+		<CategoryName>Sebzeler</CategoryName>
+	</Category>
+	<Category CategoryId="5">
+		<CategoryName>Atistirmaliklar</CategoryName>
+	</Category>
+	<Category CategoryId="6">
+		<CategoryName>Yaglar</CategoryName>
+	</Category>
+	<Category CategoryId="7">
+		<CategoryName>Et Urunleri</CategoryName>
+	</Category>
+	<Category CategoryId="8">
+		<CategoryName>Kumes Hayvanlari</CategoryName>
+	</Category>
+	<Category CategoryId="9">
+		<CategoryName>Deniz Urunleri</CategoryName>
+	</Category>
+	<Category CategoryId="10">
+		<CategoryName>Corbalar</CategoryName>
+	</Category>
+	<Category CategoryId="11">
+		<CategoryName>Salatalar</CategoryName>
+	</Category>
+	<Category CategoryId="12">
+		<CategoryName>Sebze Yemekleri</CategoryName>
+	</Category>
+	<Category CategoryId="13">
+		<CategoryName>Pose Sebzeler</CategoryName>
+	</Category>
+	<Category CategoryId="14">
+		<CategoryName>Kahvalti</CategoryName>
+	</Category>
+	<Category CategoryId="15">
+		<CategoryName>Baklagiller</CategoryName>
+	</Category>
+</Categories>

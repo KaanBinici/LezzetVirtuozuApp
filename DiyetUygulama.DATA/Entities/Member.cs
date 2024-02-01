@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DiyetUygulama.DATA.Entities
 {
-    public class Member : BaseEntity
+    public class Member : BaseLogin
     {
         public Member()
         {
@@ -15,15 +15,14 @@ namespace DiyetUygulama.DATA.Entities
         }
 
         public int MemberId { get; set; }
-        public string MemberName { get; set; }
-        public string MemberSurname { get; set; }
+        public string? MemberName { get; set; }
+        public string? MemberSurname { get; set; }
         public DateTime MembershipDate { get; set; } = DateTime.Now;
-        public string PhotoPath { get; set; }
+        public string? PhotoPath { get; set; }
 
 
         //Navigation Properies
         public virtual MemberDetail MemberDetail { get; set; }
-        public virtual LoginInfo LoginInfo { get; set; }
         public virtual ICollection<Meal> Meals { get; set; }
     }
 }

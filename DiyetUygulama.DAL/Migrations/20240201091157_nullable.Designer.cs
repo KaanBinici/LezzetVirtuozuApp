@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DiyetUygulama.DAL.Migrations
 {
     [DbContext(typeof(DiyetUygulamasiContext))]
-    [Migration("20240130111107_initialCatalog1")]
-    partial class initialCatalog1
+    [Migration("20240201091157_nullable")]
+    partial class nullable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -48,6 +48,14 @@ namespace DiyetUygulama.DAL.Migrations
                     b.Property<DateTime?>("DeletedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
@@ -57,6 +65,18 @@ namespace DiyetUygulama.DAL.Migrations
                     b.HasKey("AdminId");
 
                     b.ToTable("Admins");
+
+                    b.HasData(
+                        new
+                        {
+                            AdminId = 1,
+                            AdminName = "admin",
+                            AdminSurname = "admin",
+                            CreatedDate = new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8217),
+                            Email = "admin@admin.com",
+                            Password = "password",
+                            Status = 0
+                        });
                 });
 
             modelBuilder.Entity("DiyetUygulama.DATA.Entities.Category", b =>
@@ -87,53 +107,15 @@ namespace DiyetUygulama.DAL.Migrations
                     b.HasKey("CategoryId");
 
                     b.ToTable("Categories");
-                });
 
-            modelBuilder.Entity("DiyetUygulama.DATA.Entities.LoginInfo", b =>
-                {
-                    b.Property<int>("LoginInfoId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LoginInfoId"), 1L, 1);
-
-                    b.Property<int>("AdminId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<int>("MemberId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("LoginInfoId");
-
-                    b.HasIndex("AdminId")
-                        .IsUnique();
-
-                    b.HasIndex("MemberId")
-                        .IsUnique();
-
-                    b.ToTable("LoginInfos");
+                    b.HasData(
+                        new
+                        {
+                            CategoryId = 1,
+                            CategoryName = "Et",
+                            CreatedDate = new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8207),
+                            Status = 0
+                        });
                 });
 
             modelBuilder.Entity("DiyetUygulama.DATA.Entities.Meal", b =>
@@ -173,6 +155,17 @@ namespace DiyetUygulama.DAL.Migrations
                     b.HasIndex("MemberId");
 
                     b.ToTable("Meals");
+
+                    b.HasData(
+                        new
+                        {
+                            MealId = 1,
+                            CreatedDate = new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8225),
+                            MealDate = new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8224),
+                            MealType = 1,
+                            MemberId = 1,
+                            Status = 0
+                        });
                 });
 
             modelBuilder.Entity("DiyetUygulama.DATA.Entities.Member", b =>
@@ -189,21 +182,26 @@ namespace DiyetUygulama.DAL.Migrations
                     b.Property<DateTime?>("DeletedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("MemberName")
+                    b.Property<string>("Email")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MemberName")
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
                     b.Property<string>("MemberSurname")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<DateTime>("MembershipDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("PhotoPath")
+                    b.Property<string>("Password")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhotoPath")
                         .HasColumnType("nvarchar");
 
                     b.Property<int>("Status")
@@ -215,6 +213,19 @@ namespace DiyetUygulama.DAL.Migrations
                     b.HasKey("MemberId");
 
                     b.ToTable("Members");
+
+                    b.HasData(
+                        new
+                        {
+                            MemberId = 1,
+                            CreatedDate = new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8096),
+                            Email = "member@member.com",
+                            MemberName = "Tümay",
+                            MemberSurname = "Özyazıcı",
+                            MembershipDate = new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8082),
+                            Password = "password",
+                            Status = 0
+                        });
                 });
 
             modelBuilder.Entity("DiyetUygulama.DATA.Entities.MemberDetail", b =>
@@ -270,6 +281,23 @@ namespace DiyetUygulama.DAL.Migrations
                         .IsUnique();
 
                     b.ToTable("MemberDetails");
+
+                    b.HasData(
+                        new
+                        {
+                            MemberDetailId = 1,
+                            Allergy1 = 0,
+                            Allergy2 = 1,
+                            BirthDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedDate = new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8196),
+                            FatRatio = 20.0,
+                            Gender = true,
+                            Height = 180.0,
+                            IsDiabetes = true,
+                            MemberId = 1,
+                            Status = 0,
+                            Weight = 100.0
+                        });
                 });
 
             modelBuilder.Entity("DiyetUygulama.DATA.Entities.Product", b =>
@@ -280,7 +308,13 @@ namespace DiyetUygulama.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductId"), 1L, 1);
 
+                    b.Property<double>("Amount")
+                        .HasColumnType("float");
+
                     b.Property<double>("Calories")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Carbonhydrate")
                         .HasColumnType("float");
 
                     b.Property<int>("CategoryId")
@@ -292,20 +326,39 @@ namespace DiyetUygulama.DAL.Migrations
                     b.Property<DateTime?>("DeletedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<double>("Fat")
+                        .HasColumnType("float");
+
+                    b.Property<bool>("HasGluten")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("HasLactose")
+                        .HasColumnType("bit");
+
                     b.Property<int>("MealId")
                         .HasColumnType("int");
 
                     b.Property<string>("PhotoPath")
-                        .IsRequired()
                         .HasColumnType("nvarchar");
+
+                    b.Property<string>("Portion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductName")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<double>("Protein")
+                        .HasColumnType("float");
+
                     b.Property<int>("Status")
                         .HasColumnType("int");
+
+                    b.Property<string>("Unit")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
@@ -317,71 +370,26 @@ namespace DiyetUygulama.DAL.Migrations
                     b.HasIndex("MealId");
 
                     b.ToTable("Products");
-                });
 
-            modelBuilder.Entity("DiyetUygulama.DATA.Entities.ProductDetail", b =>
-                {
-                    b.Property<int>("ProductDetailId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductDetailId"), 1L, 1);
-
-                    b.Property<double>("Carbonhydrate")
-                        .HasColumnType("float");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("HasGluten")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("HasLactose")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<double>("Protein")
-                        .HasColumnType("float");
-
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
-
-                    b.Property<double>("Sugar")
-                        .HasColumnType("float");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("ProductDetailId");
-
-                    b.HasIndex("ProductId")
-                        .IsUnique();
-
-                    b.ToTable("ProductDetails");
-                });
-
-            modelBuilder.Entity("DiyetUygulama.DATA.Entities.LoginInfo", b =>
-                {
-                    b.HasOne("DiyetUygulama.DATA.Entities.Admin", "Admin")
-                        .WithOne("LoginInfo")
-                        .HasForeignKey("DiyetUygulama.DATA.Entities.LoginInfo", "AdminId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("DiyetUygulama.DATA.Entities.Member", "Member")
-                        .WithOne("LoginInfo")
-                        .HasForeignKey("DiyetUygulama.DATA.Entities.LoginInfo", "MemberId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Admin");
-
-                    b.Navigation("Member");
+                    b.HasData(
+                        new
+                        {
+                            ProductId = 1,
+                            Amount = 120.0,
+                            Calories = 100.0,
+                            Carbonhydrate = 2.6000000000000001,
+                            CategoryId = 1,
+                            CreatedDate = new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8231),
+                            Fat = 10.56,
+                            HasGluten = false,
+                            HasLactose = false,
+                            MealId = 1,
+                            Portion = "1 dilim",
+                            ProductName = "Bonfile",
+                            Protein = 34.5,
+                            Status = 0,
+                            Unit = "g"
+                        });
                 });
 
             modelBuilder.Entity("DiyetUygulama.DATA.Entities.Meal", b =>
@@ -425,23 +433,6 @@ namespace DiyetUygulama.DAL.Migrations
                     b.Navigation("Meal");
                 });
 
-            modelBuilder.Entity("DiyetUygulama.DATA.Entities.ProductDetail", b =>
-                {
-                    b.HasOne("DiyetUygulama.DATA.Entities.Product", "Product")
-                        .WithOne("ProductDetail")
-                        .HasForeignKey("DiyetUygulama.DATA.Entities.ProductDetail", "ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("DiyetUygulama.DATA.Entities.Admin", b =>
-                {
-                    b.Navigation("LoginInfo")
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("DiyetUygulama.DATA.Entities.Category", b =>
                 {
                     b.Navigation("Products");
@@ -454,18 +445,9 @@ namespace DiyetUygulama.DAL.Migrations
 
             modelBuilder.Entity("DiyetUygulama.DATA.Entities.Member", b =>
                 {
-                    b.Navigation("LoginInfo")
-                        .IsRequired();
-
                     b.Navigation("Meals");
 
                     b.Navigation("MemberDetail")
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("DiyetUygulama.DATA.Entities.Product", b =>
-                {
-                    b.Navigation("ProductDetail")
                         .IsRequired();
                 });
 #pragma warning restore 612, 618

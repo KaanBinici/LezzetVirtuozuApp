@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DiyetUygulama.DAL.Migrations
 {
-    public partial class initialCatalog : Migration
+    public partial class nullable : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -20,7 +20,9 @@ namespace DiyetUygulama.DAL.Migrations
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     DeletedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    Status = table.Column<int>(type: "int", nullable: false)
+                    Status = table.Column<int>(type: "int", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -50,50 +52,20 @@ namespace DiyetUygulama.DAL.Migrations
                 {
                     MemberId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    MemberName = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
-                    MemberSurname = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    MemberName = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
+                    MemberSurname = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
                     MembershipDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    PhotoPath = table.Column<string>(type: "nvarchar", nullable: false),
+                    PhotoPath = table.Column<string>(type: "nvarchar", nullable: true),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     DeletedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    Status = table.Column<int>(type: "int", nullable: false)
+                    Status = table.Column<int>(type: "int", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Members", x => x.MemberId);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "LoginInfos",
-                columns: table => new
-                {
-                    LoginInfoId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Email = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Status = table.Column<bool>(type: "bit", nullable: false, defaultValue: false),
-                    MemberId = table.Column<int>(type: "int", nullable: false),
-                    AdminId = table.Column<int>(type: "int", nullable: false),
-                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdatedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    DeletedDate = table.Column<DateTime>(type: "datetime2", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_LoginInfos", x => x.LoginInfoId);
-                    table.ForeignKey(
-                        name: "FK_LoginInfos_Admins_AdminId",
-                        column: x => x.AdminId,
-                        principalTable: "Admins",
-                        principalColumn: "AdminId",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_LoginInfos_Members_MemberId",
-                        column: x => x.MemberId,
-                        principalTable: "Members",
-                        principalColumn: "MemberId",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -160,8 +132,16 @@ namespace DiyetUygulama.DAL.Migrations
                     ProductId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ProductName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    Amount = table.Column<double>(type: "float", nullable: false),
+                    Unit = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Portion = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Calories = table.Column<double>(type: "float", nullable: false),
-                    PhotoPath = table.Column<string>(type: "nvarchar", nullable: false),
+                    Protein = table.Column<double>(type: "float", nullable: false),
+                    Carbonhydrate = table.Column<double>(type: "float", nullable: false),
+                    Fat = table.Column<double>(type: "float", nullable: false),
+                    HasGluten = table.Column<bool>(type: "bit", nullable: false),
+                    HasLactose = table.Column<bool>(type: "bit", nullable: false),
+                    PhotoPath = table.Column<string>(type: "nvarchar", nullable: true),
                     CategoryId = table.Column<int>(type: "int", nullable: false),
                     MealId = table.Column<int>(type: "int", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -186,45 +166,35 @@ namespace DiyetUygulama.DAL.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "ProductDetails",
-                columns: table => new
-                {
-                    ProductDetailId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    HasGluten = table.Column<bool>(type: "bit", nullable: false),
-                    HasLactose = table.Column<bool>(type: "bit", nullable: false),
-                    Protein = table.Column<double>(type: "float", nullable: false),
-                    Carbonhydrate = table.Column<double>(type: "float", nullable: false),
-                    Sugar = table.Column<double>(type: "float", nullable: false),
-                    ProductId = table.Column<int>(type: "int", nullable: false),
-                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdatedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    DeletedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    Status = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_ProductDetails", x => x.ProductDetailId);
-                    table.ForeignKey(
-                        name: "FK_ProductDetails_Products_ProductId",
-                        column: x => x.ProductId,
-                        principalTable: "Products",
-                        principalColumn: "ProductId",
-                        onDelete: ReferentialAction.Cascade);
-                });
+            migrationBuilder.InsertData(
+                table: "Admins",
+                columns: new[] { "AdminId", "AdminName", "AdminSurname", "CreatedDate", "DeletedDate", "Email", "Password", "Status", "UpdatedDate" },
+                values: new object[] { 1, "admin", "admin", new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8217), null, "admin@admin.com", "password", 0, null });
 
-            migrationBuilder.CreateIndex(
-                name: "IX_LoginInfos_AdminId",
-                table: "LoginInfos",
-                column: "AdminId",
-                unique: true);
+            migrationBuilder.InsertData(
+                table: "Categories",
+                columns: new[] { "CategoryId", "CategoryName", "CreatedDate", "DeletedDate", "Status", "UpdatedDate" },
+                values: new object[] { 1, "Et", new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8207), null, 0, null });
 
-            migrationBuilder.CreateIndex(
-                name: "IX_LoginInfos_MemberId",
-                table: "LoginInfos",
-                column: "MemberId",
-                unique: true);
+            migrationBuilder.InsertData(
+                table: "Members",
+                columns: new[] { "MemberId", "CreatedDate", "DeletedDate", "Email", "MemberName", "MemberSurname", "MembershipDate", "Password", "PhotoPath", "Status", "UpdatedDate" },
+                values: new object[] { 1, new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8096), null, "member@member.com", "Tümay", "Özyazıcı", new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8082), "password", null, 0, null });
+
+            migrationBuilder.InsertData(
+                table: "Meals",
+                columns: new[] { "MealId", "CreatedDate", "DeletedDate", "MealDate", "MealType", "MemberId", "Status", "UpdatedDate", "WaterConsumption" },
+                values: new object[] { 1, new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8225), null, new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8224), 1, 1, 0, null, null });
+
+            migrationBuilder.InsertData(
+                table: "MemberDetails",
+                columns: new[] { "MemberDetailId", "Allergy1", "Allergy2", "BirthDate", "CreatedDate", "DeletedDate", "FatRatio", "Gender", "Height", "IsDiabetes", "MemberId", "Status", "UpdatedDate", "Weight" },
+                values: new object[] { 1, 0, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8196), null, 20.0, true, 180.0, true, 1, 0, null, 100.0 });
+
+            migrationBuilder.InsertData(
+                table: "Products",
+                columns: new[] { "ProductId", "Amount", "Calories", "Carbonhydrate", "CategoryId", "CreatedDate", "DeletedDate", "Fat", "HasGluten", "HasLactose", "MealId", "PhotoPath", "Portion", "ProductName", "Protein", "Status", "Unit", "UpdatedDate" },
+                values: new object[] { 1, 120.0, 100.0, 2.6000000000000001, 1, new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8231), null, 10.56, false, false, 1, null, "1 dilim", "Bonfile", 34.5, 0, "g", null });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Meals_MemberId",
@@ -235,12 +205,6 @@ namespace DiyetUygulama.DAL.Migrations
                 name: "IX_MemberDetails_MemberId",
                 table: "MemberDetails",
                 column: "MemberId",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_ProductDetails_ProductId",
-                table: "ProductDetails",
-                column: "ProductId",
                 unique: true);
 
             migrationBuilder.CreateIndex(
@@ -257,16 +221,10 @@ namespace DiyetUygulama.DAL.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "LoginInfos");
+                name: "Admins");
 
             migrationBuilder.DropTable(
                 name: "MemberDetails");
-
-            migrationBuilder.DropTable(
-                name: "ProductDetails");
-
-            migrationBuilder.DropTable(
-                name: "Admins");
 
             migrationBuilder.DropTable(
                 name: "Products");

@@ -11,27 +11,26 @@ namespace DiyetUygulama.DATA.Entities
 {
     public class MemberDetail : BaseEntity
     {
-
-        private DateTime _birthDate;
-
+        private DateTime? _birthDate;
 
         public int MemberDetailId { get; set; }
-        public DateTime BirthDate
+
+        public DateTime? BirthDate
         {
-            get { return _birthDate; }
+            get { return _birthDate ?? DateTime.Now; }
             set { _birthDate = value; }
         }
 
         public int Age
         {
-            get { return DateTime.Now.Year - _birthDate.Year; }
+            get { return DateTime.Now.Year - (_birthDate?.Year ?? DateTime.Now.Year); }
         }
 
         public bool? Gender { get; set; }
-        public double Height { get; set; }
-        public double Weight { get; set; }
+        public double? Height { get; set; }
+        public double? Weight { get; set; }
         public double? FatRatio { get; set; }
-        public bool IsDiabetes { get; set; }
+        public bool? IsDiabetes { get; set; }
         public Allergies? Allergy1 { get; set; }    //Nullable olacak
         public Allergies? Allergy2 { get; set; }    //Nullable olacak
 

@@ -14,5 +14,6 @@ namespace DiyetUygulama.SERVICE.Interfaces
         int Delete(MemberDetail entity);
         List<MemberDetail> GetAll();
         List<MemberDetail> GetWhere(Func<MemberDetail, bool> expression);
+        MemberDetail GetMemberById(int id);
     }
 }

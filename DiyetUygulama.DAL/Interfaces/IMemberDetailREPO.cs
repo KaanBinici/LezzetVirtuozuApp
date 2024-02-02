@@ -9,5 +9,6 @@ namespace DiyetUygulama.DAL.Interfaces
 {
     public interface IMemberDetailREPO : IBaseREPO<MemberDetail>
     {
+        MemberDetail GetMemberById(int id);
     }
 }

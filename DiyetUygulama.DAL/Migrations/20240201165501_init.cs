@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DiyetUygulama.DAL.Migrations
 {
-    public partial class nullable : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -100,12 +100,12 @@ namespace DiyetUygulama.DAL.Migrations
                 {
                     MemberDetailId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    BirthDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    BirthDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     Gender = table.Column<bool>(type: "bit", nullable: true),
-                    Height = table.Column<double>(type: "float", nullable: false),
-                    Weight = table.Column<double>(type: "float", nullable: false),
+                    Height = table.Column<double>(type: "float", nullable: true),
+                    Weight = table.Column<double>(type: "float", nullable: true),
                     FatRatio = table.Column<double>(type: "float", nullable: true),
-                    IsDiabetes = table.Column<bool>(type: "bit", nullable: false),
+                    IsDiabetes = table.Column<bool>(type: "bit", nullable: true),
                     Allergy1 = table.Column<int>(type: "int", nullable: true),
                     Allergy2 = table.Column<int>(type: "int", nullable: true),
                     MemberId = table.Column<int>(type: "int", nullable: false),
@@ -169,32 +169,32 @@ namespace DiyetUygulama.DAL.Migrations
             migrationBuilder.InsertData(
                 table: "Admins",
                 columns: new[] { "AdminId", "AdminName", "AdminSurname", "CreatedDate", "DeletedDate", "Email", "Password", "Status", "UpdatedDate" },
-                values: new object[] { 1, "admin", "admin", new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8217), null, "admin@admin.com", "password", 0, null });
+                values: new object[] { 1, "admin", "admin", new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(4030), null, "admin@admin.com", "password", 0, null });
 
             migrationBuilder.InsertData(
                 table: "Categories",
                 columns: new[] { "CategoryId", "CategoryName", "CreatedDate", "DeletedDate", "Status", "UpdatedDate" },
-                values: new object[] { 1, "Et", new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8207), null, 0, null });
+                values: new object[] { 1, "Et", new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(4020), null, 0, null });
 
             migrationBuilder.InsertData(
                 table: "Members",
                 columns: new[] { "MemberId", "CreatedDate", "DeletedDate", "Email", "MemberName", "MemberSurname", "MembershipDate", "Password", "PhotoPath", "Status", "UpdatedDate" },
-                values: new object[] { 1, new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8096), null, "member@member.com", "Tümay", "Özyazıcı", new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8082), "password", null, 0, null });
+                values: new object[] { 1, new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(3899), null, "member@member.com", "Tümay", "Özyazıcı", new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(3889), "password", null, 0, null });
 
             migrationBuilder.InsertData(
                 table: "Meals",
                 columns: new[] { "MealId", "CreatedDate", "DeletedDate", "MealDate", "MealType", "MemberId", "Status", "UpdatedDate", "WaterConsumption" },
-                values: new object[] { 1, new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8225), null, new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8224), 1, 1, 0, null, null });
+                values: new object[] { 1, new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(4039), null, new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(4039), 1, 1, 0, null, null });
 
             migrationBuilder.InsertData(
                 table: "MemberDetails",
                 columns: new[] { "MemberDetailId", "Allergy1", "Allergy2", "BirthDate", "CreatedDate", "DeletedDate", "FatRatio", "Gender", "Height", "IsDiabetes", "MemberId", "Status", "UpdatedDate", "Weight" },
-                values: new object[] { 1, 0, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8196), null, 20.0, true, 180.0, true, 1, 0, null, 100.0 });
+                values: new object[] { 1, 0, 1, null, new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(4001), null, 20.0, true, 180.0, true, 1, 0, null, 100.0 });
 
             migrationBuilder.InsertData(
                 table: "Products",
                 columns: new[] { "ProductId", "Amount", "Calories", "Carbonhydrate", "CategoryId", "CreatedDate", "DeletedDate", "Fat", "HasGluten", "HasLactose", "MealId", "PhotoPath", "Portion", "ProductName", "Protein", "Status", "Unit", "UpdatedDate" },
-                values: new object[] { 1, 120.0, 100.0, 2.6000000000000001, 1, new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8231), null, 10.56, false, false, 1, null, "1 dilim", "Bonfile", 34.5, 0, "g", null });
+                values: new object[] { 1, 120.0, 100.0, 2.6000000000000001, 1, new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(4047), null, 10.56, false, false, 1, null, "1 dilim", "Bonfile", 34.5, 0, "g", null });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Meals_MemberId",

@@ -15,5 +15,6 @@ namespace DiyetUygulama.SERVICE.Interfaces
         List<Member> GetAll();
         List<Member> GetAllActive();
         List<Member> GetWhere(Func<Member, bool> expression);
+        Member GetMemberByEmail(string mail);
     }
 }

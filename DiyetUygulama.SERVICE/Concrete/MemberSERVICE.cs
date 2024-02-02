@@ -43,6 +43,11 @@ namespace DiyetUygulama.SERVICE.Concrete
             return _memberREPO.GetAllWhere(x=>x.Status !=BaseStatus.Deleted).ToList();
         }
 
+        public Member GetMemberByEmail(string mail)
+        {
+            return _memberREPO.GetMemberByEmail(mail);
+        }
+
         public List<Member> GetWhere(Func<Member, bool> expression)
         {
             return _memberREPO.GetAll().Where(expression).ToList();

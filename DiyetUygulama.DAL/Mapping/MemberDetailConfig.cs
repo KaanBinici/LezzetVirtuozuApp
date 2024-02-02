@@ -16,12 +16,12 @@ namespace DiyetUygulama.DAL.Mapping
         public void Configure(EntityTypeBuilder<MemberDetail> builder)
         {
             builder.HasKey(x => x.MemberDetailId);
-            builder.Property(x => x.BirthDate).HasColumnType("datetime2").IsRequired();
+            builder.Property(x => x.BirthDate).HasColumnType("datetime2");
             builder.Property(x => x.Gender);
-            builder.Property(x => x.Height).IsRequired();
-            builder.Property(x => x.Weight).IsRequired();
+            builder.Property(x => x.Height);
+            builder.Property(x => x.Weight);
             builder.Property(x => x.FatRatio);
-            builder.Property(x => x.IsDiabetes).IsRequired();
+            builder.Property(x => x.IsDiabetes);
             builder.Ignore(x => x.Age);
         }
     }

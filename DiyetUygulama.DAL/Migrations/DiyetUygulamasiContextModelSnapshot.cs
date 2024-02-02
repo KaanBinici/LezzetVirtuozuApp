@@ -70,7 +70,7 @@ namespace DiyetUygulama.DAL.Migrations
                             AdminId = 1,
                             AdminName = "admin",
                             AdminSurname = "admin",
-                            CreatedDate = new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8217),
+                            CreatedDate = new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(4030),
                             Email = "admin@admin.com",
                             Password = "password",
                             Status = 0
@@ -111,7 +111,7 @@ namespace DiyetUygulama.DAL.Migrations
                         {
                             CategoryId = 1,
                             CategoryName = "Et",
-                            CreatedDate = new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8207),
+                            CreatedDate = new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(4020),
                             Status = 0
                         });
                 });
@@ -158,8 +158,8 @@ namespace DiyetUygulama.DAL.Migrations
                         new
                         {
                             MealId = 1,
-                            CreatedDate = new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8225),
-                            MealDate = new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8224),
+                            CreatedDate = new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(4039),
+                            MealDate = new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(4039),
                             MealType = 1,
                             MemberId = 1,
                             Status = 0
@@ -216,11 +216,11 @@ namespace DiyetUygulama.DAL.Migrations
                         new
                         {
                             MemberId = 1,
-                            CreatedDate = new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8096),
+                            CreatedDate = new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(3899),
                             Email = "member@member.com",
                             MemberName = "Tümay",
                             MemberSurname = "Özyazıcı",
-                            MembershipDate = new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8082),
+                            MembershipDate = new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(3889),
                             Password = "password",
                             Status = 0
                         });
@@ -240,7 +240,7 @@ namespace DiyetUygulama.DAL.Migrations
                     b.Property<int?>("Allergy2")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("BirthDate")
+                    b.Property<DateTime?>("BirthDate")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("CreatedDate")
@@ -255,10 +255,10 @@ namespace DiyetUygulama.DAL.Migrations
                     b.Property<bool?>("Gender")
                         .HasColumnType("bit");
 
-                    b.Property<double>("Height")
+                    b.Property<double?>("Height")
                         .HasColumnType("float");
 
-                    b.Property<bool>("IsDiabetes")
+                    b.Property<bool?>("IsDiabetes")
                         .HasColumnType("bit");
 
                     b.Property<int>("MemberId")
@@ -270,7 +270,7 @@ namespace DiyetUygulama.DAL.Migrations
                     b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<double>("Weight")
+                    b.Property<double?>("Weight")
                         .HasColumnType("float");
 
                     b.HasKey("MemberDetailId");
@@ -286,8 +286,7 @@ namespace DiyetUygulama.DAL.Migrations
                             MemberDetailId = 1,
                             Allergy1 = 0,
                             Allergy2 = 1,
-                            BirthDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8196),
+                            CreatedDate = new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(4001),
                             FatRatio = 20.0,
                             Gender = true,
                             Height = 180.0,
@@ -377,7 +376,7 @@ namespace DiyetUygulama.DAL.Migrations
                             Calories = 100.0,
                             Carbonhydrate = 2.6000000000000001,
                             CategoryId = 1,
-                            CreatedDate = new DateTime(2024, 2, 1, 12, 11, 57, 654, DateTimeKind.Local).AddTicks(8231),
+                            CreatedDate = new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(4047),
                             Fat = 10.56,
                             HasGluten = false,
                             HasLactose = false,

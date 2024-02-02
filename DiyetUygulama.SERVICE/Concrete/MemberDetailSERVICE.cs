@@ -38,6 +38,11 @@ namespace DiyetUygulama.SERVICE.Concrete
             return _memberDetailREPO.GetAll();
         }
 
+        public MemberDetail GetMemberById(int id)
+        {
+            return _memberDetailREPO.GetMemberById(id);
+        }
+
         public List<MemberDetail> GetWhere(Func<MemberDetail, bool> expression)
         {
             return _memberDetailREPO.GetAll().Where(expression).ToList();

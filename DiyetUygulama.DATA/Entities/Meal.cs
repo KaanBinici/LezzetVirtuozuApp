@@ -19,6 +19,10 @@ namespace DiyetUygulama.DATA.Entities
         public Meals MealType { get; set; }
         public DateTime MealDate { get; set; } = DateTime.Now;
         public int? WaterConsumption { get; set; }
+        public double? TotalCalories { get; set; }
+        public double? TotalFat { get; set; }
+        public double? TotalProtein { get; set; }
+        public double? TotalCarbonydrate { get; set; }
 
 
         public virtual ICollection<Product> Products { get; set; }

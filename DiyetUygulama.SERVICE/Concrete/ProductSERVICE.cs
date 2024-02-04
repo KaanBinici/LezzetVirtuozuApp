@@ -26,7 +26,7 @@ namespace DiyetUygulama.SERVICE.Concrete
             return _productREPO.Create(entity);
         }
 
-        public int Delete(Product entity)
+        public int SoftDelete(Product entity)
         {
             entity.DeletedDate = DateTime.Now;
             entity.Status = BaseStatus.Deleted;
@@ -48,6 +48,13 @@ namespace DiyetUygulama.SERVICE.Concrete
             entity.UpdatedDate = DateTime.Now;
             entity.Status = BaseStatus.Modified;
             return _productREPO.Update(entity);
+        }
+
+        public int Delete(Product entity)
+        {
+            entity.DeletedDate = DateTime.Now;
+            entity.Status = BaseStatus.Deleted;
+            return _productREPO.Delete(entity);
         }
     }
 }

@@ -1,6 +1,8 @@
-﻿using DiyetUygulama.SERVICE.Concrete;
+﻿using DiyetUygulama.DATA.Entities;
+using DiyetUygulama.SERVICE.Concrete;
 using DiyetUygulama.SERVICE.Interfaces;
 using LezzetVirtuozuApp.UIFORM.Metotlar;
+using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,62 +17,89 @@ namespace LezzetVirtuozuApp.UIFORM.Formlar
 {
     public partial class FormVucutYagOrani : Form
     {
-        IMemberDetailSERVICE _memberDetailSERVICE = new MemberDetailSERVICE();
+        IMemberDetailSERVICE _memberDetailSERVICE;
+        private MemberDetail _memberDetail;
+        public FormVucutYagOrani(MemberDetail memberdetail)
+        {
+            InitializeComponent();
+            _memberDetailSERVICE = new MemberDetailSERVICE();
+            _memberDetail = memberdetail;
+
+            if (_memberDetail.Height != null)
+                txt_boy.Text = _memberDetail.Height.ToString();
+            if (_memberDetail.Gender != null)
+                rdb_erkek.Checked = _memberDetail.Gender == true ? true : false;
+
+            lbl_oranSonucu.Visible = false;
+        }
         public FormVucutYagOrani()
         {
             InitializeComponent();
-            rdb_erkek.Checked = true;
-            lbl_oranSonucu.Visible = false;
+            
         }
 
         private void btn_hesapla_Click(object sender, EventArgs e)
         {
-            bool gender = rdb_erkek.Checked ? true : false;
+            try
+            {
+                bool gender = rdb_erkek.Checked ? true : false;
 
-            double oran = Fonksiyonlar.FatRatioCalculate(gender, txt_boy.Text, txt_boyun.Text, txt_bel.Text, txt_kalca.Text);
-            txt_yagOrani.Text = oran.ToString();
-            lbl_oranSonucu.Visible = true;
+                double oran = Fonksiyonlar.FatRatioCalculate(gender, txt_boy.Text, txt_boyun.Text, txt_bel.Text, txt_kalca.Text);
+                txt_yagOrani.Text = Math.Round(oran, 2).ToString();
+                lbl_oranSonucu.Visible = true;
 
-            ShowRatioInLabel(oran, gender);
+                ShowDetailsAboutRatio(oran, gender);
 
-            var result= _memberDetailSERVICE.GetMemberById(FormUyeBilgileri.online)
+                _memberDetail.FatRatio = oran;
+                _memberDetailSERVICE.Update(_memberDetail);
 
+                MessageBox.Show("Vücut Yağ Oranınız Hesaplandı.");
 
+                Fonksiyonlar.Clean(this.Controls);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Verileri doğru ve eksiksiz giriniz.");
+            }
 
-
-            Fonksiyonlar.Clean(this.Controls);
         }
-        public void ShowRatioInLabel(double oran, bool gender)
+        public void ShowDetailsAboutRatio(double oran, bool gender)
         {
             if (gender == true && oran > 22)
             {
                 lbl_oranSonucu.ForeColor = Color.Red;
                 lbl_oranSonucu.Text = "Yağ oranınız olması gerekenden fazla.";
+                pb_resim.Image = System.Drawing.Image.FromFile("Pictures\\fatman.jpg");
             }
             else if (gender == true && oran < 22 && oran > 17)
             {
                 lbl_oranSonucu.ForeColor = Color.Green;
                 lbl_oranSonucu.Text = "Yağ oranınız ideal durumda.";
+                pb_resim.Image = System.Drawing.Image.FromFile("Pictures\\kaslıerkekfoto.jpg");
             }
             else if (gender == true && oran < 17)
             {
                 lbl_oranSonucu.ForeColor = Color.Blue;
                 lbl_oranSonucu.Text = "Yağ oranınız olması gerekenden az.";
+                pb_resim.Image = System.Drawing.Image.FromFile("Pictures\\zayıfadam.jpg");
             }
             else if (gender == false && oran > 26)
             {
                 lbl_oranSonucu.ForeColor = Color.Red;
                 lbl_oranSonucu.Text = "Yağ oranınız olması gerekenden fazla.";
+                pb_resim.Image = System.Drawing.Image.FromFile("Pictures\\fatgirl.jpg");
             }
             else if (gender == false && oran < 26 && oran > 21)
             {
                 lbl_oranSonucu.ForeColor = Color.Green;
                 lbl_oranSonucu.Text = "Yağ oranınız ideal durumda.";
+                pb_resim.Image = System.Drawing.Image.FromFile("Pictures\\kaslıkadınfoto.jpg");
             }
             else if (gender == false && oran < 21)
             {
                 lbl_oranSonucu.ForeColor = Color.Blue;
                 lbl_oranSonucu.Text = "Yağ oranınız olması gerekenden az.";
+                pb_resim.Image = System.Drawing.Image.FromFile("Pictures\\aşırızayıfkadın.jpg");
             }
         }
     }

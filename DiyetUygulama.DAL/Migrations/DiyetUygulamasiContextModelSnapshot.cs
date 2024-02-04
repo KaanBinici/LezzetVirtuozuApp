@@ -70,7 +70,7 @@ namespace DiyetUygulama.DAL.Migrations
                             AdminId = 1,
                             AdminName = "admin",
                             AdminSurname = "admin",
-                            CreatedDate = new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(4030),
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8016),
                             Email = "admin@admin.com",
                             Password = "password",
                             Status = 0
@@ -110,8 +110,78 @@ namespace DiyetUygulama.DAL.Migrations
                         new
                         {
                             CategoryId = 1,
-                            CategoryName = "Et",
-                            CreatedDate = new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(4020),
+                            CategoryName = "Et Ürünleri",
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(7960),
+                            Status = 0
+                        },
+                        new
+                        {
+                            CategoryId = 2,
+                            CategoryName = "Tavuk Ürünleri",
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(7966),
+                            Status = 0
+                        },
+                        new
+                        {
+                            CategoryId = 3,
+                            CategoryName = "Süt Ürünleri",
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(7971),
+                            Status = 0
+                        },
+                        new
+                        {
+                            CategoryId = 4,
+                            CategoryName = "Meyveler",
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(7975),
+                            Status = 0
+                        },
+                        new
+                        {
+                            CategoryId = 5,
+                            CategoryName = "Sebzeler",
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(7979),
+                            Status = 0
+                        },
+                        new
+                        {
+                            CategoryId = 6,
+                            CategoryName = "Çorbalar",
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(7990),
+                            Status = 0
+                        },
+                        new
+                        {
+                            CategoryId = 7,
+                            CategoryName = "Deniz Ürünleri",
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(7994),
+                            Status = 0
+                        },
+                        new
+                        {
+                            CategoryId = 8,
+                            CategoryName = "Baklagiller",
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(7998),
+                            Status = 0
+                        },
+                        new
+                        {
+                            CategoryId = 9,
+                            CategoryName = "Tatlılar",
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8002),
+                            Status = 0
+                        },
+                        new
+                        {
+                            CategoryId = 10,
+                            CategoryName = "Tahıl Ürünleri",
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8006),
+                            Status = 0
+                        },
+                        new
+                        {
+                            CategoryId = 11,
+                            CategoryName = "İçecekler",
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8010),
                             Status = 0
                         });
                 });
@@ -142,6 +212,18 @@ namespace DiyetUygulama.DAL.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
+                    b.Property<double?>("TotalCalories")
+                        .HasColumnType("float");
+
+                    b.Property<double?>("TotalCarbonydrate")
+                        .HasColumnType("float");
+
+                    b.Property<double?>("TotalFat")
+                        .HasColumnType("float");
+
+                    b.Property<double?>("TotalProtein")
+                        .HasColumnType("float");
+
                     b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
 
@@ -158,8 +240,8 @@ namespace DiyetUygulama.DAL.Migrations
                         new
                         {
                             MealId = 1,
-                            CreatedDate = new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(4039),
-                            MealDate = new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(4039),
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8023),
+                            MealDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8023),
                             MealType = 1,
                             MemberId = 1,
                             Status = 0
@@ -200,7 +282,8 @@ namespace DiyetUygulama.DAL.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhotoPath")
-                        .HasColumnType("nvarchar");
+                        .HasMaxLength(225)
+                        .HasColumnType("nvarchar(225)");
 
                     b.Property<int>("Status")
                         .HasColumnType("int");
@@ -216,12 +299,23 @@ namespace DiyetUygulama.DAL.Migrations
                         new
                         {
                             MemberId = 1,
-                            CreatedDate = new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(3899),
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(7917),
                             Email = "member@member.com",
+                            MemberName = "asd",
+                            MemberSurname = "Özyazıcı",
+                            MembershipDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(7908),
+                            Password = "password",
+                            Status = 2
+                        },
+                        new
+                        {
+                            MemberId = 2,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(7947),
+                            Email = "q",
                             MemberName = "Tümay",
                             MemberSurname = "Özyazıcı",
-                            MembershipDate = new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(3889),
-                            Password = "password",
+                            MembershipDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(7946),
+                            Password = "q",
                             Status = 0
                         });
                 });
@@ -242,6 +336,9 @@ namespace DiyetUygulama.DAL.Migrations
 
                     b.Property<DateTime?>("BirthDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<double?>("BodyMassIndex")
+                        .HasColumnType("float");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -270,6 +367,9 @@ namespace DiyetUygulama.DAL.Migrations
                     b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<double?>("WaterConsumptionNeeded")
+                        .HasColumnType("float");
+
                     b.Property<double?>("Weight")
                         .HasColumnType("float");
 
@@ -286,12 +386,26 @@ namespace DiyetUygulama.DAL.Migrations
                             MemberDetailId = 1,
                             Allergy1 = 0,
                             Allergy2 = 1,
-                            CreatedDate = new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(4001),
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(7937),
                             FatRatio = 20.0,
                             Gender = true,
                             Height = 180.0,
                             IsDiabetes = true,
                             MemberId = 1,
+                            Status = 2,
+                            Weight = 100.0
+                        },
+                        new
+                        {
+                            MemberDetailId = 2,
+                            Allergy1 = 0,
+                            Allergy2 = 1,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(7953),
+                            FatRatio = 20.0,
+                            Gender = true,
+                            Height = 180.0,
+                            IsDiabetes = true,
+                            MemberId = 2,
                             Status = 0,
                             Weight = 100.0
                         });
@@ -305,13 +419,14 @@ namespace DiyetUygulama.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductId"), 1L, 1);
 
-                    b.Property<double>("Amount")
+                    b.Property<double?>("Amount")
                         .HasColumnType("float");
 
-                    b.Property<double>("Calories")
+                    b.Property<double?>("Calories")
+                        .IsRequired()
                         .HasColumnType("float");
 
-                    b.Property<double>("Carbonhydrate")
+                    b.Property<double?>("Carbonhydrate")
                         .HasColumnType("float");
 
                     b.Property<int>("CategoryId")
@@ -323,23 +438,23 @@ namespace DiyetUygulama.DAL.Migrations
                     b.Property<DateTime?>("DeletedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<double>("Fat")
+                    b.Property<double?>("Fat")
                         .HasColumnType("float");
 
-                    b.Property<bool>("HasGluten")
+                    b.Property<bool?>("HasGluten")
                         .HasColumnType("bit");
 
-                    b.Property<bool>("HasLactose")
+                    b.Property<bool?>("HasLactose")
                         .HasColumnType("bit");
 
                     b.Property<int>("MealId")
                         .HasColumnType("int");
 
                     b.Property<string>("PhotoPath")
-                        .HasColumnType("nvarchar");
+                        .HasMaxLength(225)
+                        .HasColumnType("nvarchar(225)");
 
                     b.Property<string>("Portion")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductName")
@@ -347,18 +462,20 @@ namespace DiyetUygulama.DAL.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<double>("Protein")
+                    b.Property<double?>("Protein")
                         .HasColumnType("float");
 
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
                     b.Property<string>("Unit")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<bool?>("Visible")
+                        .HasColumnType("bit");
 
                     b.HasKey("ProductId");
 
@@ -376,16 +493,438 @@ namespace DiyetUygulama.DAL.Migrations
                             Calories = 100.0,
                             Carbonhydrate = 2.6000000000000001,
                             CategoryId = 1,
-                            CreatedDate = new DateTime(2024, 2, 1, 19, 55, 0, 920, DateTimeKind.Local).AddTicks(4047),
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8030),
                             Fat = 10.56,
                             HasGluten = false,
                             HasLactose = false,
                             MealId = 1,
+                            PhotoPath = "FoodPictures\\bonfile.jpg",
                             Portion = "1 dilim",
                             ProductName = "Bonfile",
                             Protein = 34.5,
                             Status = 0,
-                            Unit = "g"
+                            Unit = "g",
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 2,
+                            Amount = 150.0,
+                            Calories = 200.0,
+                            Carbonhydrate = 45.799999999999997,
+                            CategoryId = 8,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8039),
+                            Fat = 1.3,
+                            HasGluten = false,
+                            HasLactose = false,
+                            MealId = 1,
+                            PhotoPath = "FoodPictures\\pilav.jpg",
+                            Portion = "1 porsiyon",
+                            ProductName = "Pilav",
+                            Protein = 5.2000000000000002,
+                            Status = 0,
+                            Unit = "g",
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 3,
+                            Amount = 100.0,
+                            Calories = 300.0,
+                            Carbonhydrate = 30.0,
+                            CategoryId = 10,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8046),
+                            Fat = 15.800000000000001,
+                            HasGluten = true,
+                            HasLactose = true,
+                            MealId = 1,
+                            PhotoPath = "FoodPictures\\pizza.jpg",
+                            Portion = "1 dilim",
+                            ProductName = "Pizza",
+                            Protein = 12.5,
+                            Status = 0,
+                            Unit = "g",
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 4,
+                            Amount = 100.0,
+                            Calories = 250.0,
+                            Carbonhydrate = 40.5,
+                            CategoryId = 10,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8052),
+                            Fat = 2.2999999999999998,
+                            HasGluten = true,
+                            HasLactose = false,
+                            MealId = 1,
+                            PhotoPath = "FoodPictures\\makarna.jpg",
+                            Portion = "100 gram",
+                            ProductName = "Makarna",
+                            Protein = 8.0,
+                            Status = 0,
+                            Unit = "g",
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 5,
+                            Amount = 150.0,
+                            Calories = 280.0,
+                            Carbonhydrate = 30.5,
+                            CategoryId = 10,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8057),
+                            Fat = 8.6999999999999993,
+                            HasGluten = true,
+                            HasLactose = false,
+                            MealId = 1,
+                            PhotoPath = "FoodPictures\\lahmacun.jpg",
+                            Portion = "1 adet",
+                            ProductName = "Lahmacun",
+                            Protein = 10.0,
+                            Status = 0,
+                            Unit = "g",
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 6,
+                            Amount = 100.0,
+                            Calories = 200.0,
+                            Carbonhydrate = 25.5,
+                            CategoryId = 3,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8064),
+                            Fat = 12.300000000000001,
+                            HasGluten = true,
+                            HasLactose = true,
+                            MealId = 1,
+                            PhotoPath = "FoodPictures\\dondurma.jpg",
+                            Portion = "1 top",
+                            ProductName = "Dondurma",
+                            Protein = 4.0,
+                            Status = 0,
+                            Unit = "g",
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 7,
+                            Amount = 200.0,
+                            Calories = 400.0,
+                            Carbonhydrate = 40.0,
+                            CategoryId = 1,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8070),
+                            Fat = 15.5,
+                            HasGluten = true,
+                            HasLactose = true,
+                            MealId = 1,
+                            PhotoPath = "FoodPictures\\iskender.jpg",
+                            Portion = "1 porsiyon",
+                            ProductName = "İskender",
+                            Protein = 20.0,
+                            Status = 0,
+                            Unit = "g",
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 8,
+                            Amount = 250.0,
+                            Calories = 150.0,
+                            Carbonhydrate = 20.0,
+                            CategoryId = 6,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8075),
+                            Fat = 3.2000000000000002,
+                            HasGluten = false,
+                            HasLactose = false,
+                            MealId = 1,
+                            PhotoPath = "FoodPictures\\çorba.jpg",
+                            Portion = "1 kase",
+                            ProductName = "Mercimek Çorbası",
+                            Protein = 8.5,
+                            Status = 0,
+                            Unit = "g",
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 9,
+                            Amount = 150.0,
+                            Calories = 250.0,
+                            Carbonhydrate = 30.5,
+                            CategoryId = 9,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8081),
+                            Fat = 8.0,
+                            HasGluten = false,
+                            HasLactose = true,
+                            MealId = 1,
+                            PhotoPath = "FoodPictures\\sütlaç.jpg",
+                            Portion = "1 porsiyon",
+                            ProductName = "Sütlaç",
+                            Protein = 5.0,
+                            Status = 0,
+                            Unit = "g",
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 10,
+                            Amount = 200.0,
+                            Calories = 300.0,
+                            Carbonhydrate = 10.5,
+                            CategoryId = 2,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8088),
+                            Fat = 12.800000000000001,
+                            HasGluten = false,
+                            HasLactose = false,
+                            MealId = 1,
+                            PhotoPath = "FoodPictures\\menemen.png",
+                            Portion = "1 porsiyon",
+                            ProductName = "Menemen",
+                            Protein = 15.0,
+                            Status = 0,
+                            Unit = "g",
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 11,
+                            Amount = 100.0,
+                            Calories = 180.0,
+                            Carbonhydrate = 0.5,
+                            CategoryId = 7,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8094),
+                            Fat = 10.199999999999999,
+                            HasGluten = false,
+                            HasLactose = false,
+                            MealId = 1,
+                            PhotoPath = "FoodPictures\\hamsi.jpg",
+                            Portion = "100 gram",
+                            ProductName = "Hamsi",
+                            Protein = 25.0,
+                            Status = 0,
+                            Unit = "g",
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 12,
+                            Amount = 150.0,
+                            Calories = 100.0,
+                            Carbonhydrate = 6.5,
+                            CategoryId = 3,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8105),
+                            Fat = 5.0,
+                            HasGluten = false,
+                            HasLactose = true,
+                            MealId = 1,
+                            PhotoPath = "FoodPictures\\cacık.jpg",
+                            Portion = "1 kase",
+                            ProductName = "Cacık",
+                            Protein = 2.0,
+                            Status = 0,
+                            Unit = "g",
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 13,
+                            Amount = 30.0,
+                            Calories = 70.0,
+                            Carbonhydrate = 15.0,
+                            CategoryId = 10,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8111),
+                            Fat = 1.0,
+                            HasGluten = true,
+                            HasLactose = false,
+                            MealId = 1,
+                            PhotoPath = "FoodPictures\\ekmek.jpeg",
+                            Portion = "1 dilim",
+                            ProductName = "Ekmek",
+                            Protein = 3.0,
+                            Status = 0,
+                            Unit = "g",
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 14,
+                            Amount = 150.0,
+                            Calories = 5.0,
+                            Carbonhydrate = 10.0,
+                            CategoryId = 11,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8117),
+                            Fat = 0.10000000000000001,
+                            HasGluten = false,
+                            HasLactose = false,
+                            MealId = 1,
+                            PhotoPath = "FoodPictures\\çay.jpeg",
+                            Portion = "1 fincan",
+                            ProductName = "Çay",
+                            Protein = 0.5,
+                            Status = 0,
+                            Unit = "ml",
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 15,
+                            Amount = 100.0,
+                            Calories = 300.0,
+                            Carbonhydrate = 35.0,
+                            CategoryId = 7,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8123),
+                            Fat = 5.0,
+                            HasGluten = true,
+                            HasLactose = false,
+                            MealId = 1,
+                            PhotoPath = "FoodPictures\\suşi.jpeg",
+                            Portion = "1 porsiyon",
+                            ProductName = "Sushi",
+                            Protein = 15.0,
+                            Status = 0,
+                            Unit = "g",
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 16,
+                            Amount = 21.0,
+                            Calories = 64.0,
+                            Carbonhydrate = 17.300000000000001,
+                            CategoryId = 9,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8128),
+                            Fat = 0.0,
+                            HasGluten = false,
+                            HasLactose = false,
+                            MealId = 1,
+                            PhotoPath = "FoodPictures\\bal.jpeg",
+                            Portion = "1 yemek kaşığı",
+                            ProductName = "Bal",
+                            Protein = 0.29999999999999999,
+                            Status = 0,
+                            Unit = "g",
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 17,
+                            Amount = 50.0,
+                            Calories = 120.0,
+                            Carbonhydrate = 0.20000000000000001,
+                            CategoryId = 4,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8134),
+                            Fat = 15.0,
+                            HasGluten = false,
+                            HasLactose = false,
+                            MealId = 1,
+                            PhotoPath = "FoodPictures\\zeytin.jpeg",
+                            Portion = "10 adet",
+                            ProductName = "Zeytin",
+                            Protein = 0.80000000000000004,
+                            Status = 0,
+                            Unit = "g",
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 18,
+                            Amount = 100.0,
+                            Calories = 80.0,
+                            Carbonhydrate = 18.0,
+                            CategoryId = 4,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8140),
+                            Fat = 0.29999999999999999,
+                            HasGluten = false,
+                            HasLactose = false,
+                            MealId = 1,
+                            PhotoPath = "FoodPictures\\incir.jpeg",
+                            Portion = "2 adet",
+                            ProductName = "İncir",
+                            Protein = 1.0,
+                            Status = 0,
+                            Unit = "g",
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 19,
+                            Amount = 50.0,
+                            Calories = 68.0,
+                            Carbonhydrate = 0.59999999999999998,
+                            CategoryId = 2,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8146),
+                            Fat = 5.5,
+                            HasGluten = false,
+                            HasLactose = true,
+                            MealId = 1,
+                            PhotoPath = "FoodPictures\\yumurta.jpeg",
+                            Portion = "1 adet",
+                            ProductName = "Yumurta",
+                            Protein = 6.7000000000000002,
+                            Status = 0,
+                            Unit = "g",
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 20,
+                            Amount = 30.0,
+                            Calories = 250.0,
+                            Carbonhydrate = 2.0,
+                            CategoryId = 3,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8152),
+                            Fat = 21.0,
+                            HasGluten = false,
+                            HasLactose = true,
+                            MealId = 1,
+                            PhotoPath = "FoodPictures\\beyazpeynir.jpg",
+                            Portion = "1 dilim",
+                            ProductName = "Beyaz Peynir",
+                            Protein = 17.0,
+                            Status = 0,
+                            Unit = "g",
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 21,
+                            Amount = 100.0,
+                            Calories = 300.0,
+                            Carbonhydrate = 20.0,
+                            CategoryId = 8,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8158),
+                            Fat = 15.5,
+                            HasGluten = true,
+                            HasLactose = false,
+                            MealId = 1,
+                            PhotoPath = "FoodPictures\\çiğköfte.JPG",
+                            Portion = "100 gram",
+                            ProductName = "Çiğköfte",
+                            Protein = 12.0,
+                            Status = 0,
+                            Unit = "g",
+                            Visible = true
+                        },
+                        new
+                        {
+                            ProductId = 22,
+                            Amount = 250.0,
+                            Calories = 120.0,
+                            Carbonhydrate = 12.0,
+                            CategoryId = 11,
+                            CreatedDate = new DateTime(2024, 2, 4, 20, 16, 12, 683, DateTimeKind.Local).AddTicks(8164),
+                            Fat = 3.5,
+                            HasGluten = false,
+                            HasLactose = true,
+                            MealId = 1,
+                            PhotoPath = "FoodPictures\\milk.jpg",
+                            Portion = "1 bardak",
+                            ProductName = "Süt",
+                            Protein = 8.0,
+                            Status = 0,
+                            Unit = "ml",
+                            Visible = true
                         });
                 });
 

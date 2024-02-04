@@ -43,7 +43,7 @@
             cmb_alerji2 = new ComboBox();
             label4 = new Label();
             label6 = new Label();
-            pictureBox1 = new PictureBox();
+            pb_resimUye = new PictureBox();
             rdb_kadin = new RadioButton();
             label7 = new Label();
             label8 = new Label();
@@ -53,7 +53,9 @@
             dtp_dogumGunu = new DateTimePicker();
             label10 = new Label();
             chk_diyabetMi = new CheckBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            label11 = new Label();
+            txt_kitleEndeksi = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)pb_resimUye).BeginInit();
             SuspendLayout();
             // 
             // txt_boy
@@ -128,7 +130,7 @@
             // 
             btn_kaydet.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btn_kaydet.FlatStyle = FlatStyle.Flat;
-            btn_kaydet.Location = new Point(227, 400);
+            btn_kaydet.Location = new Point(445, 399);
             btn_kaydet.Name = "btn_kaydet";
             btn_kaydet.Size = new Size(118, 41);
             btn_kaydet.TabIndex = 24;
@@ -146,6 +148,7 @@
             btn_resimEkle.TabIndex = 22;
             btn_resimEkle.Text = "Resim Ekle";
             btn_resimEkle.UseVisualStyleBackColor = true;
+            btn_resimEkle.Click += btn_resimEkle_Click;
             // 
             // txt_kilo
             // 
@@ -158,7 +161,7 @@
             // 
             cmb_alerji1.DropDownStyle = ComboBoxStyle.DropDownList;
             cmb_alerji1.FormattingEnabled = true;
-            cmb_alerji1.Location = new Point(185, 308);
+            cmb_alerji1.Location = new Point(185, 354);
             cmb_alerji1.Name = "cmb_alerji1";
             cmb_alerji1.Size = new Size(205, 28);
             cmb_alerji1.TabIndex = 25;
@@ -167,7 +170,7 @@
             // 
             cmb_alerji2.DropDownStyle = ComboBoxStyle.DropDownList;
             cmb_alerji2.FormattingEnabled = true;
-            cmb_alerji2.Location = new Point(185, 342);
+            cmb_alerji2.Location = new Point(185, 388);
             cmb_alerji2.Name = "cmb_alerji2";
             cmb_alerji2.Size = new Size(205, 28);
             cmb_alerji2.TabIndex = 25;
@@ -175,7 +178,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(46, 311);
+            label4.Location = new Point(46, 357);
             label4.Name = "label4";
             label4.Size = new Size(55, 20);
             label4.TabIndex = 17;
@@ -184,20 +187,20 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(44, 345);
+            label6.Location = new Point(44, 391);
             label6.Name = "label6";
             label6.Size = new Size(55, 20);
             label6.TabIndex = 17;
             label6.Text = "Alerji2:";
             // 
-            // pictureBox1
+            // pb_resimUye
             // 
-            pictureBox1.Location = new Point(564, 35);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(197, 238);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 26;
-            pictureBox1.TabStop = false;
+            pb_resimUye.Location = new Point(564, 35);
+            pb_resimUye.Name = "pb_resimUye";
+            pb_resimUye.Size = new Size(197, 238);
+            pb_resimUye.SizeMode = PictureBoxSizeMode.StretchImage;
+            pb_resimUye.TabIndex = 26;
+            pb_resimUye.TabStop = false;
             // 
             // rdb_kadin
             // 
@@ -222,16 +225,16 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(44, 245);
+            label8.Location = new Point(44, 291);
             label8.Name = "label8";
-            label8.Size = new Size(76, 20);
+            label8.Size = new Size(102, 20);
             label8.TabIndex = 17;
-            label8.Text = "Yağ Oranı:";
+            label8.Text = "Yağ Oranı (%):";
             // 
             // txt_yagOrani
             // 
             txt_yagOrani.Enabled = false;
-            txt_yagOrani.Location = new Point(185, 242);
+            txt_yagOrani.Location = new Point(185, 288);
             txt_yagOrani.Name = "txt_yagOrani";
             txt_yagOrani.Size = new Size(205, 27);
             txt_yagOrani.TabIndex = 5;
@@ -239,16 +242,16 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(44, 278);
+            label9.Location = new Point(44, 324);
             label9.Name = "label9";
-            label9.Size = new Size(89, 20);
+            label9.Size = new Size(112, 20);
             label9.TabIndex = 17;
-            label9.Text = "Su Tüketimi:";
+            label9.Text = "Su Tüketimi (lt):";
             // 
             // txt_suTuketimi
             // 
             txt_suTuketimi.Enabled = false;
-            txt_suTuketimi.Location = new Point(185, 275);
+            txt_suTuketimi.Location = new Point(185, 321);
             txt_suTuketimi.Name = "txt_suTuketimi";
             txt_suTuketimi.Size = new Size(205, 27);
             txt_suTuketimi.TabIndex = 6;
@@ -272,12 +275,29 @@
             // chk_diyabetMi
             // 
             chk_diyabetMi.AutoSize = true;
-            chk_diyabetMi.Location = new Point(47, 382);
+            chk_diyabetMi.Location = new Point(47, 428);
             chk_diyabetMi.Name = "chk_diyabetMi";
             chk_diyabetMi.Size = new Size(86, 24);
             chk_diyabetMi.TabIndex = 29;
             chk_diyabetMi.Text = "Diyabet:";
             chk_diyabetMi.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(44, 258);
+            label11.Name = "label11";
+            label11.Size = new Size(96, 20);
+            label11.TabIndex = 17;
+            label11.Text = "Kitle Endeksi:";
+            // 
+            // txt_kitleEndeksi
+            // 
+            txt_kitleEndeksi.Enabled = false;
+            txt_kitleEndeksi.Location = new Point(185, 255);
+            txt_kitleEndeksi.Name = "txt_kitleEndeksi";
+            txt_kitleEndeksi.Size = new Size(205, 27);
+            txt_kitleEndeksi.TabIndex = 5;
             // 
             // FormUyeBilgileri
             // 
@@ -287,12 +307,13 @@
             Controls.Add(chk_diyabetMi);
             Controls.Add(label10);
             Controls.Add(dtp_dogumGunu);
-            Controls.Add(pictureBox1);
+            Controls.Add(pb_resimUye);
             Controls.Add(cmb_alerji2);
             Controls.Add(cmb_alerji1);
             Controls.Add(btn_kaydet);
             Controls.Add(btn_resimEkle);
             Controls.Add(txt_suTuketimi);
+            Controls.Add(txt_kitleEndeksi);
             Controls.Add(txt_yagOrani);
             Controls.Add(txt_kilo);
             Controls.Add(txt_boy);
@@ -300,6 +321,7 @@
             Controls.Add(txt_ad);
             Controls.Add(label6);
             Controls.Add(label9);
+            Controls.Add(label11);
             Controls.Add(label4);
             Controls.Add(label8);
             Controls.Add(label7);
@@ -312,7 +334,7 @@
             Name = "FormUyeBilgileri";
             Text = "FormUyeBilgileri";
             Load += FormUyeBilgileri_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pb_resimUye).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -334,7 +356,7 @@
         private ComboBox cmb_alerji2;
         private Label label4;
         private Label label6;
-        private PictureBox pictureBox1;
+        private PictureBox pb_resimUye;
         private RadioButton rdb_kadin;
         private Label label7;
         private Label label8;
@@ -344,5 +366,7 @@
         private DateTimePicker dtp_dogumGunu;
         private Label label10;
         private CheckBox chk_diyabetMi;
+        private Label label11;
+        private TextBox txt_kitleEndeksi;
     }
 }

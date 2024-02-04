@@ -1,5 +1,6 @@
 ﻿using DiyetUygulama.SERVICE.Concrete;
 using DiyetUygulama.SERVICE.Interfaces;
+using LezzetVirtuozuApp.UIFORM.Metotlar;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,12 +26,12 @@ namespace LezzetVirtuozuApp.UIFORM
             Application.Exit();
         }
 
-
-
-
         private void pbKilitFoto_Click(object sender, EventArgs e)
         {
-            txtsifreTekrar.UseSystemPasswordChar = false;
+            if (txtsifreTekrar.UseSystemPasswordChar == true)
+                txtsifreTekrar.UseSystemPasswordChar = false;
+            else
+                txtsifreTekrar.UseSystemPasswordChar = true;
         }
 
         private void btnOnay_Click(object sender, EventArgs e)
@@ -50,6 +51,31 @@ namespace LezzetVirtuozuApp.UIFORM
             {
                 MessageBox.Show("Girilen şifreler aynı değil.");
             }
+        }
+
+        private void txtsifre_TextChanged(object sender, EventArgs e)
+        {
+            lbl_sifreGucu.Text = Fonksiyonlar.PasswordLevel(txtsifre.Text);
+            if (Fonksiyonlar.PasswordLevel(txtsifre.Text) == "Yüksek")
+            {
+                lbl_sifreGucu.ForeColor = Color.Green;
+            }
+            else if (Fonksiyonlar.PasswordLevel(txtsifre.Text) == "Orta")
+            {
+                lbl_sifreGucu.ForeColor = Color.Orange;
+            }
+            else if (Fonksiyonlar.PasswordLevel(txtsifre.Text) == "Düşük")
+            {
+                lbl_sifreGucu.ForeColor = Color.Red;
+            }
+        }
+
+        private void pb_kilitFoto_Click(object sender, EventArgs e)
+        {
+            if (txtsifre.UseSystemPasswordChar == true)
+                txtsifre.UseSystemPasswordChar = false;
+            else
+                txtsifre.UseSystemPasswordChar = true;
         }
     }
 }

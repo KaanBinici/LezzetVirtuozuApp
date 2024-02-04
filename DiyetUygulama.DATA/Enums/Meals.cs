@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,11 @@ namespace DiyetUygulama.DATA.Enums
 {
     public enum Meals
     {
-        Breakfast, Lunch, Dinner
+
+        Sabah,
+        [Display(Name = "Öğle")]
+        Ogle,
+        [Display(Name = "Akşam")]
+        Aksam
     }
 }

@@ -38,6 +38,16 @@ namespace DiyetUygulama.SERVICE.Concrete
             return _mealREPO.GetAll();
         }
 
+        public Meal GetMeal(Meals meal, int memberId)
+        {
+            return _mealREPO.GetMeal(meal, memberId);
+        }
+
+        public Meal GetMealByMealIdDate(Meals meal, int memberId, DateTime date)
+        {
+            return _mealREPO.GetMealByMealIdDate(meal, memberId, date);
+        }
+
         public List<Meal> GetWhere(Func<Meal, bool> expression)
         {
             return _mealREPO.GetAll().Where(expression).ToList();

@@ -1,5 +1,7 @@
-﻿using System;
+﻿using DiyetUygulama.DATA.Enums;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,6 +54,44 @@ namespace LezzetVirtuozuApp.UIFORM.Metotlar
 
             return ratio;
         }
+        public static double WaterConsumptionCalculate(double weight)
+        {
+            return weight * 0.033;
+        }
+        public static string PasswordLevel(string password)
+        {
+            bool letterCheck = false;
+            bool numberCheck = false;
+            for (int i = 0; i < password.Length; i++)
+            {
+                char x = Convert.ToChar(password.Substring(i, 1));
+                if (char.IsLetter(x))
+                {
+                    letterCheck = true;
+                }
+                else if (char.IsDigit(x))
+                {
+                    numberCheck = true;
+                }
+            }
 
+            if (letterCheck == true && numberCheck == true && password.Length > 7)
+            {
+                return "Yüksek";
+            }
+            else if (letterCheck == true && numberCheck == true && password.Length == 7)
+            {
+                return "Orta";
+            }
+            else if (letterCheck == true && numberCheck == false || letterCheck == false && numberCheck == true)
+            {
+                return "Düşük";
+            }
+            else
+            {
+                return "Düşük";
+            }
+        }
+        
     }
 }

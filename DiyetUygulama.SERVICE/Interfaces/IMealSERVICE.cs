@@ -1,4 +1,5 @@
 ﻿using DiyetUygulama.DATA.Entities;
+using DiyetUygulama.DATA.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,8 @@ namespace DiyetUygulama.SERVICE.Interfaces
         int Delete(Meal entity);
         List<Meal> GetAll();
         List<Meal> GetWhere(Func<Meal, bool> expression);
+        Meal GetMeal(Meals meal, int memberId);
+
+        Meal GetMealByMealIdDate(Meals meal, int memberId, DateTime date);
     }
 }

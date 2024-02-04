@@ -28,196 +28,295 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
             label1 = new Label();
             label2 = new Label();
+            txt_arama = new TextBox();
+            pb_yiyecekResmi = new PictureBox();
+            lst_liste = new ListView();
+            columnHeader7 = new ColumnHeader();
+            columnHeader1 = new ColumnHeader();
+            columnHeader2 = new ColumnHeader();
+            columnHeader3 = new ColumnHeader();
+            columnHeader4 = new ColumnHeader();
+            columnHeader5 = new ColumnHeader();
+            columnHeader6 = new ColumnHeader();
+            cmb_kategori = new ComboBox();
+            cmb_ogun = new ComboBox();
+            chk_gluten = new CheckBox();
+            chk_laktoz = new CheckBox();
+            btn_yiyecekAra = new Button();
             label3 = new Label();
-            radioButton1 = new RadioButton();
-            label4 = new Label();
-            label5 = new Label();
-            checkBox1 = new CheckBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            btn_oguneEkle = new Button();
+            btn_listele = new Button();
+            lst_urunListesi = new ListView();
+            columnHeader10 = new ColumnHeader();
+            columnHeader11 = new ColumnHeader();
+            btn_guncelle = new Button();
+            btn_tumListe = new Button();
+            ((System.ComponentModel.ISupportInitialize)pb_yiyecekResmi).BeginInit();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(666, 375);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 41);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(548, 375);
-            button2.Name = "button2";
-            button2.Size = new Size(96, 41);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(419, 375);
-            button3.Name = "button3";
-            button3.Size = new Size(99, 41);
-            button3.TabIndex = 2;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(82, 74);
+            label1.Location = new Point(12, 34);
             label1.Name = "label1";
-            label1.Size = new Size(50, 20);
+            label1.Size = new Size(69, 20);
             label1.TabIndex = 3;
-            label1.Text = "label1";
+            label1.Text = "Kategori:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(82, 112);
+            label2.Location = new Point(12, 72);
             label2.Name = "label2";
-            label2.Size = new Size(50, 20);
+            label2.Size = new Size(48, 20);
             label2.TabIndex = 4;
-            label2.Text = "label2";
+            label2.Text = "Öğün:";
+            // 
+            // txt_arama
+            // 
+            txt_arama.Location = new Point(12, 193);
+            txt_arama.Name = "txt_arama";
+            txt_arama.Size = new Size(317, 27);
+            txt_arama.TabIndex = 12;
+            // 
+            // pb_yiyecekResmi
+            // 
+            pb_yiyecekResmi.Location = new Point(345, 12);
+            pb_yiyecekResmi.Name = "pb_yiyecekResmi";
+            pb_yiyecekResmi.Size = new Size(234, 266);
+            pb_yiyecekResmi.SizeMode = PictureBoxSizeMode.StretchImage;
+            pb_yiyecekResmi.TabIndex = 14;
+            pb_yiyecekResmi.TabStop = false;
+            // 
+            // lst_liste
+            // 
+            lst_liste.Columns.AddRange(new ColumnHeader[] { columnHeader7, columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6 });
+            lst_liste.FullRowSelect = true;
+            lst_liste.GridLines = true;
+            lst_liste.Location = new Point(12, 296);
+            lst_liste.Name = "lst_liste";
+            lst_liste.Size = new Size(864, 236);
+            lst_liste.TabIndex = 15;
+            lst_liste.UseCompatibleStateImageBehavior = false;
+            lst_liste.View = View.Details;
+            lst_liste.MouseClick += lst_liste_MouseClick;
+            lst_liste.MouseDoubleClick += lst_liste_MouseDoubleClick;
+            // 
+            // columnHeader7
+            // 
+            columnHeader7.Text = "Ürün";
+            columnHeader7.Width = 120;
+            // 
+            // columnHeader1
+            // 
+            columnHeader1.Text = "Yiyecek Adı";
+            columnHeader1.Width = 100;
+            // 
+            // columnHeader2
+            // 
+            columnHeader2.Text = "Kalori (kcal)";
+            columnHeader2.Width = 95;
+            // 
+            // columnHeader3
+            // 
+            columnHeader3.Text = "Protein (g)";
+            columnHeader3.Width = 85;
+            // 
+            // columnHeader4
+            // 
+            columnHeader4.Text = "Yağ (g)";
+            // 
+            // columnHeader5
+            // 
+            columnHeader5.Text = "Karbonhidrat (g)";
+            columnHeader5.Width = 130;
+            // 
+            // columnHeader6
+            // 
+            columnHeader6.Text = "Porsiyon";
+            columnHeader6.Width = 120;
+            // 
+            // cmb_kategori
+            // 
+            cmb_kategori.FormattingEnabled = true;
+            cmb_kategori.Location = new Point(112, 31);
+            cmb_kategori.Name = "cmb_kategori";
+            cmb_kategori.Size = new Size(217, 28);
+            cmb_kategori.TabIndex = 16;
+            // 
+            // cmb_ogun
+            // 
+            cmb_ogun.FormattingEnabled = true;
+            cmb_ogun.Location = new Point(112, 69);
+            cmb_ogun.Name = "cmb_ogun";
+            cmb_ogun.Size = new Size(217, 28);
+            cmb_ogun.TabIndex = 16;
+            cmb_ogun.SelectedValueChanged += cmb_ogun_SelectedValueChanged;
+            // 
+            // chk_gluten
+            // 
+            chk_gluten.AutoSize = true;
+            chk_gluten.Location = new Point(12, 114);
+            chk_gluten.Name = "chk_gluten";
+            chk_gluten.Size = new Size(91, 24);
+            chk_gluten.TabIndex = 17;
+            chk_gluten.Text = "Glutensiz";
+            chk_gluten.UseVisualStyleBackColor = true;
+            // 
+            // chk_laktoz
+            // 
+            chk_laktoz.AutoSize = true;
+            chk_laktoz.Location = new Point(135, 114);
+            chk_laktoz.Name = "chk_laktoz";
+            chk_laktoz.Size = new Size(95, 24);
+            chk_laktoz.TabIndex = 17;
+            chk_laktoz.Text = "Laktozsuz";
+            chk_laktoz.UseVisualStyleBackColor = true;
+            // 
+            // btn_yiyecekAra
+            // 
+            btn_yiyecekAra.BackColor = SystemColors.ControlLightLight;
+            btn_yiyecekAra.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_yiyecekAra.Location = new Point(12, 225);
+            btn_yiyecekAra.Name = "btn_yiyecekAra";
+            btn_yiyecekAra.Size = new Size(91, 53);
+            btn_yiyecekAra.TabIndex = 18;
+            btn_yiyecekAra.Text = "Yiyeceği Ara";
+            btn_yiyecekAra.UseVisualStyleBackColor = false;
+            btn_yiyecekAra.Click += btn_yiyecekAra_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(82, 160);
+            label3.Location = new Point(12, 156);
             label3.Name = "label3";
-            label3.Size = new Size(50, 20);
-            label3.TabIndex = 5;
-            label3.Text = "label3";
+            label3.Size = new Size(224, 20);
+            label3.TabIndex = 4;
+            label3.Text = "Aramak istediğiniz yiyeceği girin";
             // 
-            // radioButton1
+            // btn_oguneEkle
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(82, 237);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(117, 24);
-            radioButton1.TabIndex = 6;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "radioButton1";
-            radioButton1.UseVisualStyleBackColor = true;
+            btn_oguneEkle.Location = new Point(238, 226);
+            btn_oguneEkle.Name = "btn_oguneEkle";
+            btn_oguneEkle.Size = new Size(91, 53);
+            btn_oguneEkle.TabIndex = 19;
+            btn_oguneEkle.Text = "Öğün Ekle";
+            btn_oguneEkle.UseVisualStyleBackColor = true;
+            btn_oguneEkle.Click += btn_oguneEkle_Click;
             // 
-            // label4
+            // btn_listele
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label4.Location = new Point(419, 24);
-            label4.Name = "label4";
-            label4.Size = new Size(79, 31);
-            label4.TabIndex = 7;
-            label4.Text = "label4";
+            btn_listele.Location = new Point(242, 103);
+            btn_listele.Name = "btn_listele";
+            btn_listele.Size = new Size(87, 35);
+            btn_listele.TabIndex = 20;
+            btn_listele.Text = "Listele";
+            btn_listele.UseVisualStyleBackColor = true;
+            btn_listele.Click += btn_listele_Click;
             // 
-            // label5
+            // lst_urunListesi
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(91, 202);
-            label5.Name = "label5";
-            label5.Size = new Size(50, 20);
-            label5.TabIndex = 8;
-            label5.Text = "label5";
+            lst_urunListesi.Columns.AddRange(new ColumnHeader[] { columnHeader10, columnHeader11 });
+            lst_urunListesi.FullRowSelect = true;
+            lst_urunListesi.GridLines = true;
+            lst_urunListesi.Location = new Point(599, 12);
+            lst_urunListesi.Name = "lst_urunListesi";
+            lst_urunListesi.Size = new Size(277, 266);
+            lst_urunListesi.TabIndex = 21;
+            lst_urunListesi.UseCompatibleStateImageBehavior = false;
+            lst_urunListesi.View = View.Details;
+            lst_urunListesi.MouseDoubleClick += lst_urunListesi_MouseDoubleClick;
             // 
-            // checkBox1
+            // columnHeader10
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(91, 287);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(101, 24);
-            checkBox1.TabIndex = 9;
-            checkBox1.Text = "checkBox1";
-            checkBox1.UseVisualStyleBackColor = true;
+            columnHeader10.Text = "Yemek Adı";
+            columnHeader10.Width = 135;
             // 
-            // textBox1
+            // columnHeader11
             // 
-            textBox1.Location = new Point(223, 74);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 10;
+            columnHeader11.Text = "Kalori (kcal)";
+            columnHeader11.Width = 135;
             // 
-            // textBox2
+            // btn_guncelle
             // 
-            textBox2.Location = new Point(223, 112);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
-            textBox2.TabIndex = 11;
+            btn_guncelle.Location = new Point(125, 225);
+            btn_guncelle.Name = "btn_guncelle";
+            btn_guncelle.Size = new Size(91, 53);
+            btn_guncelle.TabIndex = 19;
+            btn_guncelle.Text = "Öğün Güncelle";
+            btn_guncelle.UseVisualStyleBackColor = true;
+            btn_guncelle.Click += btn_guncelle_Click;
             // 
-            // textBox3
+            // btn_tumListe
             // 
-            textBox3.Location = new Point(223, 160);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 27);
-            textBox3.TabIndex = 12;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(419, 73);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(341, 285);
-            dataGridView1.TabIndex = 13;
+            btn_tumListe.Location = new Point(242, 149);
+            btn_tumListe.Name = "btn_tumListe";
+            btn_tumListe.Size = new Size(87, 35);
+            btn_tumListe.TabIndex = 20;
+            btn_tumListe.Text = "Tüm Liste";
+            btn_tumListe.UseVisualStyleBackColor = true;
+            btn_tumListe.Click += btn_tumListe_Click;
             // 
             // FormYiyecekveIcecek
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(dataGridView1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(checkBox1);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(radioButton1);
+            ClientSize = new Size(900, 551);
+            Controls.Add(lst_urunListesi);
+            Controls.Add(btn_tumListe);
+            Controls.Add(btn_listele);
+            Controls.Add(btn_guncelle);
+            Controls.Add(btn_oguneEkle);
+            Controls.Add(btn_yiyecekAra);
+            Controls.Add(chk_laktoz);
+            Controls.Add(chk_gluten);
+            Controls.Add(cmb_ogun);
+            Controls.Add(cmb_kategori);
+            Controls.Add(lst_liste);
+            Controls.Add(pb_yiyecekResmi);
+            Controls.Add(txt_arama);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
             Name = "FormYiyecekveIcecek";
             Text = "FormYiyecekveIcecek";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += FormYiyecekveIcecek_Load;
+            ((System.ComponentModel.ISupportInitialize)pb_yiyecekResmi).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
+        private Button btn_tumListe;
         private Button button2;
         private Button button3;
         private Label label1;
         private Label label2;
-        private Label label3;
-        private RadioButton radioButton1;
-        private Label label4;
-        private Label label5;
-        private CheckBox checkBox1;
-        private TextBox textBox1;
         private TextBox textBox2;
-        private TextBox textBox3;
-        private DataGridView dataGridView1;
+        private TextBox txt_arama;
+        private PictureBox pb_yiyecekResmi;
+        private ListView lst_liste;
+        private ComboBox cmb_kategori;
+        private ComboBox cmb_ogun;
+        private CheckBox chk_gluten;
+        private CheckBox chk_laktoz;
+        private Button btn_yiyecekAra;
+        private Label label3;
+        private Button btn_oguneEkle;
+        private ColumnHeader columnHeader1;
+        private ColumnHeader columnHeader2;
+        private ColumnHeader columnHeader3;
+        private ColumnHeader columnHeader4;
+        private ColumnHeader columnHeader5;
+        private ColumnHeader columnHeader6;
+        private Button btn_listele;
+        private ColumnHeader columnHeader7;
+        private ListView lst_urunListesi;
+        private Button btn_guncelle;
+        private ColumnHeader columnHeader10;
+        private ColumnHeader columnHeader11;
     }
 }

@@ -11,6 +11,7 @@ namespace DiyetUygulama.SERVICE.Interfaces
     {
         int Add(Product entity);
         int Update(Product entity);
+        int SoftDelete(Product entity);
         int Delete(Product entity);
         List<Product> GetAll();
         List<Product> GetWhere(Func<Product, bool> expression);

@@ -31,6 +31,8 @@ namespace DiyetUygulama.DATA.Entities
         public double? Weight { get; set; }
         public double? FatRatio { get; set; }
         public bool? IsDiabetes { get; set; }
+        public double? WaterConsumptionNeeded { get; set; }
+        public double? BodyMassIndex { get; set; }
         public Allergies? Allergy1 { get; set; }    //Nullable olacak
         public Allergies? Allergy2 { get; set; }    //Nullable olacak
 

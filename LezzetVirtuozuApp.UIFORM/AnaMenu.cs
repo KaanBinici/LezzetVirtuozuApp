@@ -97,37 +97,37 @@ namespace LezzetVirtuozuApp.UIFORM
 
         private void btnYiyecekveIcecek_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Formlar.FormYiyecekveIcecek(), sender);
+            OpenChildForm(new Formlar.FormYiyecekveIcecek(_member), sender);
         }
 
         private void btnGünlükListe_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Formlar.FormGunlukListe(), sender);
+            OpenChildForm(new Formlar.FormGunlukListe(_member), sender);
         }
 
         private void btnKendiniziKiyaslayin_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Formlar.FormKendiniziKiyaslayin(), sender);
+            OpenChildForm(new Formlar.FormKendiniziKiyaslayin(_member), sender);
         }
 
         private void btnGünlükSuIhtiyaci_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Formlar.FormGunlukSuIhtiyacim(), sender);
+            OpenChildForm(new Formlar.FormGunlukSuIhtiyacim(_memberDetail), sender);
         }
 
         private void btnVucutKitleIndeksi_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Formlar.FormVucutKitleIndeksi(), sender);
+            OpenChildForm(new Formlar.FormVucutKitleIndeksi(_memberDetail), sender);
         }
 
         private void btnVucutYagOrani_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Formlar.FormVucutYagOrani(), sender);
+            OpenChildForm(new Formlar.FormVucutYagOrani(_memberDetail), sender);
         }
 
         private void btnUyeBilgileri_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Formlar.FormUyeBilgileri(), sender);
+            OpenChildForm(new Formlar.FormUyeBilgileri(_member,_memberDetail), sender);
         }
         private void Reset()
         {

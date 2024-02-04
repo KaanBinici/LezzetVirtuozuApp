@@ -33,8 +33,10 @@
             label2 = new Label();
             label1 = new Label();
             panel2 = new Panel();
+            label5 = new Label();
+            lbl_sifreGucu = new Label();
             txtsifre = new TextBox();
-            pictureBox1 = new PictureBox();
+            pb_kilitFoto = new PictureBox();
             btnolustur = new Button();
             txtsifreTekrar = new TextBox();
             pbKilitFoto = new PictureBox();
@@ -43,7 +45,7 @@
             label3 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pb_kilitFoto).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbKilitFoto).BeginInit();
             SuspendLayout();
             // 
@@ -84,8 +86,10 @@
             // 
             panel2.BackColor = SystemColors.ControlLightLight;
             panel2.BackgroundImageLayout = ImageLayout.Stretch;
+            panel2.Controls.Add(label5);
+            panel2.Controls.Add(lbl_sifreGucu);
             panel2.Controls.Add(txtsifre);
-            panel2.Controls.Add(pictureBox1);
+            panel2.Controls.Add(pb_kilitFoto);
             panel2.Controls.Add(btnolustur);
             panel2.Controls.Add(txtsifreTekrar);
             panel2.Controls.Add(pbKilitFoto);
@@ -98,6 +102,23 @@
             panel2.Size = new Size(661, 553);
             panel2.TabIndex = 5;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(166, 449);
+            label5.Name = "label5";
+            label5.Size = new Size(460, 20);
+            label5.TabIndex = 14;
+            label5.Text = "Şifre en az 7 karakterden fazla, bir büyük harf ve sayıdan oluşmalıdır.";
+            // 
+            // lbl_sifreGucu
+            // 
+            lbl_sifreGucu.AutoSize = true;
+            lbl_sifreGucu.Location = new Point(166, 352);
+            lbl_sifreGucu.Name = "lbl_sifreGucu";
+            lbl_sifreGucu.Size = new Size(0, 20);
+            lbl_sifreGucu.TabIndex = 13;
+            // 
             // txtsifre
             // 
             txtsifre.Location = new Point(166, 236);
@@ -106,23 +127,25 @@
             txtsifre.Size = new Size(376, 27);
             txtsifre.TabIndex = 12;
             txtsifre.UseSystemPasswordChar = true;
+            txtsifre.TextChanged += txtsifre_TextChanged;
             // 
-            // pictureBox1
+            // pb_kilitFoto
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(91, 234);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(35, 29);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 11;
-            pictureBox1.TabStop = false;
+            pb_kilitFoto.Image = (Image)resources.GetObject("pb_kilitFoto.Image");
+            pb_kilitFoto.Location = new Point(91, 234);
+            pb_kilitFoto.Name = "pb_kilitFoto";
+            pb_kilitFoto.Size = new Size(35, 29);
+            pb_kilitFoto.SizeMode = PictureBoxSizeMode.StretchImage;
+            pb_kilitFoto.TabIndex = 11;
+            pb_kilitFoto.TabStop = false;
+            pb_kilitFoto.Click += pb_kilitFoto_Click;
             // 
             // btnolustur
             // 
             btnolustur.Cursor = Cursors.Hand;
             btnolustur.FlatStyle = FlatStyle.Flat;
             btnolustur.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnolustur.Location = new Point(166, 374);
+            btnolustur.Location = new Point(166, 385);
             btnolustur.Name = "btnolustur";
             btnolustur.Size = new Size(94, 29);
             btnolustur.TabIndex = 10;
@@ -200,7 +223,7 @@
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pb_kilitFoto).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbKilitFoto).EndInit();
             ResumeLayout(false);
         }
@@ -221,6 +244,8 @@
         private Button btnolustur;
         private Button button1;
         private TextBox txtsifre;
-        private PictureBox pictureBox1;
+        private PictureBox pb_kilitFoto;
+        private Label lbl_sifreGucu;
+        private Label label5;
     }
 }

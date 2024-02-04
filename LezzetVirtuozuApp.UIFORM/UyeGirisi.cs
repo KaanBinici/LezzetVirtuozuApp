@@ -1,6 +1,8 @@
 ﻿
 using DiyetUygulama.DAL.Contexts;
 using DiyetUygulama.DATA.Entities;
+using DiyetUygulama.SERVICE.Concrete;
+using DiyetUygulama.SERVICE.Interfaces;
 using LezzetVirtuozuApp.UIFORM.Metotlar;
 using System;
 using System.Collections.Generic;
@@ -16,11 +18,10 @@ namespace LezzetVirtuozuApp.UIFORM
 {
     public partial class UyeGirisi : Form
     {
-        DiyetUygulamasiContext db;
-        public static string onlineMember;
+        IMemberSERVICE _memberSERVICE = new MemberSERVICE();
+        IMemberDetailSERVICE _memberDetailSERVICE = new MemberDetailSERVICE();
         public UyeGirisi()
         {
-            db = new DiyetUygulamasiContext();
             InitializeComponent();
             labelrenkvecizgi();
         }
@@ -41,16 +42,16 @@ namespace LezzetVirtuozuApp.UIFORM
 
         private void btnGiris_Click(object sender, EventArgs e)
         {
-            var onlineMember = _memberSERVICE.GetMemberByEmail(UyeGirisi.onlineMember);
-            var onlineMemberDetail = _memberDetailSERVICE.GetMemberById(onlineMember.MemberId);
+            
 
             try
             {
-                var result = db.Members.Where(x => x.Email == txtEposta.Text & x.Password == txtSifre.Text).Count();    //Metoto olacak
+                var result = _memberSERVICE.GetWhere(x => x.Email == txtEposta.Text & x.Password == txtSifre.Text).Count();
                 if (result != 0)
                 {
-                    onlineMember = txtEposta.Text;
-                    AnaMenu anaMenuForm = new AnaMenu();
+                    var onlineMember = _memberSERVICE.GetMemberByEmail(txtEposta.Text);
+                    var onlineMemberDetail = _memberDetailSERVICE.GetMemberById(onlineMember.MemberId);
+                    AnaMenu anaMenuForm = new AnaMenu(onlineMember, onlineMemberDetail);
                     anaMenuForm.Show();
                     this.Hide();
                 }
@@ -67,7 +68,10 @@ namespace LezzetVirtuozuApp.UIFORM
 
         private void pbKilitFoto_Click(object sender, EventArgs e)
         {
-            txtSifre.UseSystemPasswordChar = false;
+            if (txtSifre.UseSystemPasswordChar == true)
+                txtSifre.UseSystemPasswordChar = false;
+            else
+                txtSifre.UseSystemPasswordChar = true;
         }
 
         private void lblUyeOl_Click(object sender, EventArgs e)

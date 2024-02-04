@@ -19,7 +19,7 @@ namespace DiyetUygulama.DAL.Mapping
             builder.Property(x => x.MemberName).HasColumnType("nvarchar").HasMaxLength(30);
             builder.Property(x => x.MemberSurname).HasColumnType("nvarchar").HasMaxLength(50);
             builder.Property(x => x.MembershipDate).HasColumnType("datetime2");
-            builder.Property(x => x.PhotoPath).HasColumnType("nvarchar");
+            builder.Property(x => x.PhotoPath).HasColumnType("nvarchar").HasMaxLength(225);
         }
     }
 }

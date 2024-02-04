@@ -34,6 +34,7 @@
             label2 = new Label();
             label1 = new Label();
             panel2 = new Panel();
+            label10 = new Label();
             pictureBox2 = new PictureBox();
             btnGiris = new Button();
             txtSifre = new TextBox();
@@ -43,6 +44,7 @@
             btnCikis = new Button();
             label4 = new Label();
             label3 = new Label();
+            lbl_sifreGucu = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -87,6 +89,8 @@
             // 
             panel2.BackColor = SystemColors.ControlLightLight;
             panel2.BackgroundImageLayout = ImageLayout.Stretch;
+            panel2.Controls.Add(lbl_sifreGucu);
+            panel2.Controls.Add(label10);
             panel2.Controls.Add(pictureBox2);
             panel2.Controls.Add(btnGiris);
             panel2.Controls.Add(txtSifre);
@@ -101,6 +105,15 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(661, 553);
             panel2.TabIndex = 5;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(166, 444);
+            label10.Name = "label10";
+            label10.Size = new Size(460, 20);
+            label10.TabIndex = 12;
+            label10.Text = "Şifre en az 7 karakterden fazla, bir büyük harf ve sayıdan oluşmalıdır.";
             // 
             // pictureBox2
             // 
@@ -117,10 +130,10 @@
             btnGiris.Cursor = Cursors.Hand;
             btnGiris.FlatStyle = FlatStyle.Flat;
             btnGiris.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnGiris.Location = new Point(166, 374);
+            btnGiris.Location = new Point(166, 393);
             btnGiris.Name = "btnGiris";
             btnGiris.Size = new Size(94, 29);
-            btnGiris.TabIndex = 10;
+            btnGiris.TabIndex = 3;
             btnGiris.Text = "Üye Ol";
             btnGiris.UseVisualStyleBackColor = true;
             btnGiris.Click += btnGiris_Click;
@@ -131,8 +144,9 @@
             txtSifre.Name = "txtSifre";
             txtSifre.PlaceholderText = "Şifre";
             txtSifre.Size = new Size(376, 27);
-            txtSifre.TabIndex = 9;
+            txtSifre.TabIndex = 2;
             txtSifre.UseSystemPasswordChar = true;
+            txtSifre.TextChanged += txtSifre_TextChanged;
             // 
             // pictureBox1
             // 
@@ -161,7 +175,7 @@
             txtEposta.Name = "txtEposta";
             txtEposta.PlaceholderText = "Eposta(Örn:Kullanıcı@gmail.com)";
             txtEposta.Size = new Size(376, 27);
-            txtEposta.TabIndex = 9;
+            txtEposta.TabIndex = 1;
             // 
             // btnCikis
             // 
@@ -196,6 +210,14 @@
             label3.Size = new Size(80, 17);
             label3.TabIndex = 3;
             label3.Text = "Develop By";
+            // 
+            // lbl_sifreGucu
+            // 
+            lbl_sifreGucu.AutoSize = true;
+            lbl_sifreGucu.Location = new Point(166, 350);
+            lbl_sifreGucu.Name = "lbl_sifreGucu";
+            lbl_sifreGucu.Size = new Size(0, 20);
+            lbl_sifreGucu.TabIndex = 12;
             // 
             // UyeOlForm
             // 
@@ -237,5 +259,7 @@
         private Button btnGiris;
         private Button button1;
         private PictureBox pictureBox2;
+        private Label label10;
+        private Label lbl_sifreGucu;
     }
 }

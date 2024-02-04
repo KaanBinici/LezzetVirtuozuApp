@@ -34,7 +34,10 @@ namespace LezzetVirtuozuApp.UIFORM
 
         private void pbKilitFoto_Click(object sender, EventArgs e)
         {
-            txtSifre.UseSystemPasswordChar = false;
+            if (txtSifre.UseSystemPasswordChar == true)
+                txtSifre.UseSystemPasswordChar = false;
+            else
+                txtSifre.UseSystemPasswordChar = true;
         }
         public static string onayKodu;
         public static string ePosta;
@@ -52,26 +55,44 @@ namespace LezzetVirtuozuApp.UIFORM
             else
             {
                 Random random = new Random();
-                
+
                 onayKodu = random.Next(100000, 999999).ToString();
                 MailMessage mail = new MailMessage();
                 mail.From = new MailAddress("LezzetVirtuozu@outlook.com", "LezzetVirtüözü");
-                mail.To.Add(ePosta); 
-                mail.Subject = "Lezzet Virtüözü Doğrulama Kodu"; 
+                mail.To.Add(ePosta);
+                mail.Subject = "Lezzet Virtüözü Doğrulama Kodu";
                 mail.IsBodyHtml = true;
                 mail.Body = "Lezzet Virtüözü uygulamasına hoş geldin. İşte Doğrulama Kodun=" + onayKodu;
-                                                                  
+
                 SmtpClient smtpClient = new SmtpClient();
-                smtpClient.Port = 587; 
-                smtpClient.Host = "smtp.outlook.com"; 
-                smtpClient.EnableSsl = true; 
+                smtpClient.Port = 587;
+                smtpClient.Host = "smtp.outlook.com";
+                smtpClient.EnableSsl = true;
                 smtpClient.Credentials = new NetworkCredential("LezzetVirtuozu@outlook.com", "lezzet123");
 
-                smtpClient.Send(mail); 
+                smtpClient.Send(mail);
                 smtpClient.Timeout = 100;
 
                 KodGirisForm kodGirisForm = new KodGirisForm();
                 kodGirisForm.Show();
+                this.Close();
+            }
+        }
+
+        private void txtSifre_TextChanged(object sender, EventArgs e)
+        {
+            lbl_sifreGucu.Text = Fonksiyonlar.PasswordLevel(txtSifre.Text);
+            if (Fonksiyonlar.PasswordLevel(txtSifre.Text) == "Yüksek")
+            {
+                lbl_sifreGucu.ForeColor = Color.Green;
+            }
+            else if (Fonksiyonlar.PasswordLevel(txtSifre.Text) == "Orta")
+            {
+                lbl_sifreGucu.ForeColor = Color.Orange;
+            }
+            else if (Fonksiyonlar.PasswordLevel(txtSifre.Text) == "Düşük")
+            {
+                lbl_sifreGucu.ForeColor = Color.Red;
             }
         }
     }

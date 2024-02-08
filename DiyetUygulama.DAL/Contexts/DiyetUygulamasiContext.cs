@@ -23,7 +23,7 @@ namespace DiyetUygulama.DAL.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=GHOST2023\\SQLEXPRESS;Database=DiyetUygulamasi;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("Server="SqlServer";Database=DiyetUygulamasi;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -37,9 +37,9 @@ namespace DiyetUygulama.DAL.Contexts
             modelBuilder.Entity<Member>().HasData(new Member
             {
                 MemberId = 1,
-                MemberName = "asd",
-                MemberSurname = "Özyazıcı",
-                Email = "member@member.com",
+                MemberName = "Kaan",
+                MemberSurname = "Binici",
+                Email = "kaan@gmail.com",
                 Password = "password",
                 Status = BaseStatus.Deleted
             }) ;
